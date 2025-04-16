@@ -1,0 +1,48 @@
+@import '~/@fontsource/montserrat/latin.css';
+@import '~/@fontsource/montserrat/cyrillic.css';
+@import '~/@fontsource/inter/latin.css';
+@import '~/@fontsource/inter/cyrillic.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  svg:focus {
+    outline: none;
+  }
+}
+
+@layer components {
+  .scrollbar-primary {
+    scrollbar-width: thin;
+    scrollbar-color: theme('colors.gray.100') transparent;
+
+    /* Chrome, Edge, and Safari */
+    &::-webkit-scrollbar {
+      width: theme('width.2');
+      height: theme('height.3');
+    }
+
+    /* *::-webkit-scrollbar-track {
+      background: var(--primary);
+      border-radius: 5px;
+    } */
+
+    &::-webkit-scrollbar-thumb {
+      background-color: theme('colors.gray.200');
+      border-radius: theme('borderRadius.lg');
+
+      &:hover {
+        background-color: theme('colors.gray.300');
+      }
+    }
+  }
+}

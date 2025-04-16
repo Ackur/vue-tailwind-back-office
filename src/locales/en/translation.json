@@ -1,0 +1,536 @@
+{
+  "yes": "Yes",
+  "no": "No",
+  "accept": "Accept",
+  "cancel": "Cancel",
+  "submit": "Submit",
+  "confirm": "Confirm",
+  "search": "Search",
+  "save": "Save",
+  "profile": "Profile",
+  "quantity": "Quantity",
+  "all": "All",
+  "noData": "no data",
+  "table": {
+    "empty": {
+      "default": "No data found.",
+      "noData": "No data available in table",
+      "noSearchData": "No matching records found",
+      "noFilterResult": "No matches have been found for your search"
+    },
+    "headers": {
+      "name": "Name",
+      "username": "Username",
+      "phone": "Phone",
+      "email": "Email",
+      "credit": "Credits",
+      "created": "Registration date",
+      "lastop": "Last operation date",
+      "company": "Company",
+      "actions": "Actions",
+      "status": "Status",
+      "demo": "Demo"
+    }
+  },
+  "tooltips": {
+    "credits": "Credits",
+    "userInfo": "User info",
+    "add": "Add",
+    "addCredit": "Add credit",
+    "downloadFullList": "Download full list",
+    "downloadList": "Download list",
+    "view": "View",
+    "edit": "Edit",
+    "remove": "Delete"
+  },
+  "validators": {
+    "required": "compulsory field",
+    "phone": "please, enter a valid phone number",
+    "email": "please enter a valid email",
+    "url": "please enter a valid URL",
+    "number": "please enter a number",
+    "minLength": "please do not enter less than {minLength} characters",
+    "differentChar5": "minimum 5 different characters",
+    "passwordsMatch": "passwords do not match",
+    "containsNumber": "must contain a number",
+    "containsSymbol": "must contain the symbol",
+    "containsUpperCase": "must contain upper case",
+    "containsLowerCase": "must contain lower case",
+    "notUsername": "should not contain a username",
+    "greaterThanZeros": "number should be greater than zero",
+    "maxAmount": "maximum amount is {amount}",
+    "positiveNumber": "the number must be positive"
+  },
+  "appPagination": {
+    "separator": "of",
+    "pageSize": "Page size:"
+  },
+  "datePicker": {
+    "preset": {
+      "today": "Today",
+      "yesterday": "Yesterday",
+      "thisWeek": "This week",
+      "lastWeek": "Last week",
+      "thisMonth": "This month",
+      "lastMonth": "Last month"
+    }
+  },
+  "loginForm": {
+    "title": "Login",
+    "providerPlaceholder": "Username",
+    "passwordPlaceholder": "Password",
+    "forgotPasswordLink": "Forgot your password"
+  },
+  "forgotPasswordForm": {
+    "title": "Forgot Password",
+    "description": [
+      "Enter your user name and your password",
+      "We will send you an email to accept the new password"
+    ],
+    "providerPlaceholder": "Username",
+    "passwordPlaceholder": "New password",
+    "confirmPasswordPlaceholder": "Confirm password",
+    "backLink": "Back to login page",
+    "successfulSendingRequestMessage": "password change request has been sent, we will send you an email with the necessary confirmation"
+  },
+  "passwordChangedPage": {
+    "title": "Password Changed!",
+    "description": "Your password has been changed successfully.",
+    "actionLink": "Go to login page"
+  },
+  "authWrongPage": {
+    "title": "Ooops :(",
+    "description": "Sorry, something went wrong.",
+    "actionLink": "Go to login page"
+  },
+  "error404Page": {
+    "title": "Ooops :(",
+    "description": "page not found.",
+    "actionLink": "Go to main page"
+  },
+  "appHeader": {
+    "titles": {
+      "init": {
+        "title": "Dashboard"
+      },
+      "Users list": {
+        "title": "Users",
+        "description": "list"
+      },
+      "User info": {
+        "title": "User info"
+      },
+      "Top ups": {
+        "title": "Top ups",
+        "description": "list"
+      },
+      "General settings": {
+        "title": "General settings"
+      },
+      "My profile": {
+        "title": "My profile"
+      },
+      "empty": {
+        "title": "No title",
+        "description": "No description"
+      }
+    },
+    "userMenu": {
+      "profile": "Profile",
+      "language": "Language",
+      "exit": "Log out",
+      "exitQuestion": "Are you sure you want to log out?"
+    }
+  },
+  "cloudWidget": {
+    "CS": {
+      "title": "Click & Sign",
+      "description": "Esignature made easy"
+    },
+    "openum": {
+      "title": "Openum",
+      "description": "Registered electronic delivery"
+    },
+    "contacts": {
+      "title": "Contacts",
+      "description": "Contact book"
+    }
+  },
+  "appAside": {
+    "menuItems": {
+      "dashboard": "Dashboard",
+      "users": "Users",
+      "usersList": "List",
+      "toolbox": "Toolbox",
+      "topUps": "Top ups",
+      "myProfile": "My profile",
+      "generalSettings": "General settings"
+    }
+  },
+  "dashboardPage": {
+    "links": {
+      "users": "Users",
+      "addNewUser": "Add new",
+      "topUps": "Top ups",
+      "profile": "Profile",
+      "settings": "Settings"
+    }
+  },
+  "lastUsersTable": {
+    "title": "Last created users"
+  },
+  "usersPage": {
+    "title": "List of users"
+  },
+  "usersTable": {
+    "checkedAction": {
+      "userOn": {
+        "tooltip": "user on",
+        "question": "Are you sure you want to enable the user?"
+      },
+      "userOff": {
+        "tooltip": "user off",
+        "question": "Are you sure you want to deactivate the user?"
+      },
+      "demoOn": {
+        "tooltip": "demo on",
+        "question": "Are you sure you want to enable demo mode for the user?"
+      },
+      "demoOff": {
+        "tooltip": "demo off",
+        "question": "Are you sure you want to disable the demo mode for the user?"
+      },
+      "selected": "selected",
+      "successMessage": "Users updated successfully"
+    }
+  },
+  "userInfoPage": {
+    "userMenu": {
+      "profile": "Profile",
+      "information": "Information",
+      "numbers": "Numbers",
+      "actions": "Actions",
+      "registeredEmail": "Registered email",
+      "stats": "Stats"
+    },
+    "header": {
+      "registration": "Registration:",
+      "lastOperation": "Last operation:"
+    }
+  },
+  "userStatusses": {
+    "active": {
+      "tooltip": "Status active",
+      "question": "Are you sure you want to deactivate this user?",
+      "successMessage": "The user is activated"
+    },
+    "inactive": {
+      "tooltip": "Status inactive",
+      "question": "Are you sure you want to enable this user?",
+      "successMessage": "The user is deactivated"
+    }
+  },
+  "userDemoStatusses": {
+    "active": {
+      "tooltip": "Demo active",
+      "question": "Are you sure to want deactivated the demo mode for this user?",
+      "successMessage": "The demo is activated"
+    },
+    "inactive": {
+      "tooltip": "Demo inactive",
+      "question": "Are you sure to want activated demo mode for this user?",
+      "successMessage": "The demo is deactivated"
+    }
+  },
+  "userAllowToDeleteStatusses": {
+    "active": {
+      "tooltip": "Allowed to delete this user",
+      "question": "Do you want to prohibit the removal of this user?",
+      "successMessage": "Delete permission is activated"
+    },
+    "inactive": {
+      "tooltip": "Forbidden to delete this user",
+      "question": "Do you want to allow this user to be deleted?",
+      "successMessage": "Delete permission is deactivated"
+    }
+  },
+  "addCreditForm": {
+    "title": "Enter the amount to top up the credit:",
+    "successMessage": "Credit successfully added"
+  },
+  "subtractCreditForm": {
+    "tooltip": "Subtract credit",
+    "title": "Enter the amount to subtract the credit:",
+    "successMessage": "Credit successfully subtracted"
+  },
+  "autoTopUpCreditForm": {
+    "tooltip": "Auto top up",
+    "title": "Set auto top up values:",
+    "minimumPlaceholder": "Minimum credits",
+    "autoTopUpPlaceholder": "Auto top up amount",
+    "successMessage": "Auto-top-up request was successful"
+  },
+  "changeUserPasswordForm": {
+    "buttonName": "Change password",
+    "title": "Enter new password:",
+    "successMessage": "Password changed successfully"
+  },
+  "userProfileForm": {
+    "namePlaceholder": "Username",
+    "phonePlaceholder": "Phone",
+    "emailPlaceholder": "Email",
+    "successMessage": "Profile updated"
+  },
+  "userPhoneNumbers": {
+    "title": "Allocated numbers",
+    "emptyText": "There are no allocated numbers"
+  },
+  "userInfoForm": {
+    "title": "Tax data of the documentary evidence",
+    "contactNamePlaceholder": "Contact person",
+    "companyPlaceholder": "Company",
+    "cifPlaceholder": "ID",
+    "countryPlaceholder": "Country",
+    "statePlaceholder": "County/State",
+    "cityPlaceholder": "City/Town",
+    "tzPlaceholder": "Time zone",
+    "addressPlaceholder": "Address",
+    "zipPlaceholder": "Zip Code",
+    "commentPlaceholder": "Comment",
+    "successMessage": "User information updated"
+  },
+  "userActions": {
+    "title": "List of user actions",
+    "tooltips": {
+      "addAction": "Add a new action to the user"
+    },
+    "table": {
+      "headers": {
+        "id": "ID",
+        "event": "Event",
+        "number": "Telephone",
+        "action": "Action",
+        "value": "Value"
+      }
+    },
+    "remove": {
+      "question": "Are you sure to delete this action to the user?",
+      "successMessage": "Action removed successfully"
+    },
+    "addForm": {
+      "title": "Add new user action",
+      "eventPlaceholder": "Event",
+      "numberPlaceholder": "Phone number",
+      "actionPlaceholder": "Action",
+      "langPlaceholder": "Languages",
+      "valuePlaceholder": "Value",
+      "successMessage": "Action added successfully"
+    },
+    "events": {
+      "MO_SMS": "Receive SMS",
+      "DR_SMS": "Receive SMS delivery report",
+      "PDF_SMS": "Generate Registered SMS PDF",
+      "DR_MMS": "Receive MMS delivery report",
+      "MO_MMS": "Receive MMS",
+      "PDF_MMS": "Generate Registered MMS PDF"
+    },
+    "actions": {
+      "CGI": "Send URL",
+      "MAIL": "Send email",
+      "MAIL_CERT": "Certify the delivery",
+      "MULTIMEDIA_OBJECT": "Multimedia object reply",
+      "REDIRECT": "Resend to phone",
+      "RESP_AUTO_MMS": "Multimedia obect automatic reply",
+      "RESP_AUTO_SMS": "Automatic text reply"
+    }
+  },
+  "userRegisteredEmail": {
+    "defaultSettings": "Default settings",
+    "contractAddress": {
+      "title": "User's registered email contract address",
+      "emptyText": "no emails"
+    },
+    "whiteList": {
+      "title": "Email addresses from which user will be using the service",
+      "emptyText": "no emails",
+      "add": {
+        "title": "Enter the email address:",
+        "tooltip": "Add email",
+        "rules": {
+          "alreadyExists": "this email address already exists"
+        },
+        "successMessage": "User information updated"
+      },
+      "remove": {
+        "question": "Are you sure want to delete this user email?",
+        "successMessage": "Email removed successfully"
+      }
+    },
+    "defaultSettingsForm": {
+      "langPlaceholder": "Language of the certificate",
+      "adminMailPlaceholder": "Administration email address",
+      "sendPdfCpyFromLabel": "Registered email PDF delivery to Sender",
+      "sendPdfCpyToLabel": "Registered email PDF delivery to Recipient",
+      "sendDealPdfCpyFromLabel": "Registered email contract PDF delivery to Sender",
+      "sendDealPdfCpyToLabel": "Registered email contract PDF delivery to recipient",
+      "sendInboxPdfCpyFromLabel": "Registered Inbox PDF delivery to Sender",
+      "sendInboxPdfCpyToLabel": "Registered Inbox PDF delivery to Administration email",
+      "disableRespAutoLabel": "Receive email notifications and addendum of access to content",
+      "successMessage": "User default settings updated"
+    }
+  },
+  "userStats": {
+    "productIdPlaceholder": "Services",
+    "groupByPlaceholder": "Group by",
+    "datesPlaceholder": "Date range",
+    "tooltips": {
+      "export": "Export in CSV format"
+    },
+    "servicesList": {
+      "All": "All",
+      "Check History": "Check History",
+      "Check Last": "Check Last",
+      "Check Last Plus": "Check Last Plus",
+      "Registered Email": "Registered Email",
+      "Registered Invoice": "Registered Invoice",
+      "Check All": "Check All",
+      "Check Network": "Check Network",
+      "Check Email": "Check Email",
+      "Mailer": "Mailer",
+      "Registered Minuta": "Registered Minuta",
+      "Registered Icoming": "Registered Icoming",
+      "Registered Email Contract": "Registered Email Contract",
+      "Alert": "Alert",
+      "Check RT": "Check RT",
+      "Stamp ID": "Stamp ID",
+      "Certificado Web": "Certificado Web",
+      "eKYC Docs": "eKYC Docs",
+      "PDF generation": "PDF generation",
+      "Connectaclick Basic": "Connectaclick Basic",
+      "Click&Sign Pro": "Click&Sign Pro",
+      "Connectaclick Lite": "Connectaclick Lite",
+      "Circuito electrónico": "Circuito electrónico",
+      "eKYC Video": "eKYC Video",
+      "eKYC OCR": "eKYC OCR",
+      "Click&Sign Standard": "Click&Sign Standard",
+      "RGPD": "RGPD",
+      "eKYC Photo": "eKYC Photo",
+      "Openum eIDAS": "Openum eIDAS",
+      "2FA": "2FA",
+      "Secret": "Secret",
+      "Openum": "Openum",
+      "eKYC": "eKYC",
+      "Preguntas reto": "Preguntas reto",
+      "SMS": "SMS",
+      "SMS DR": "SMS DR",
+      "Registered SMS": "Registered SMS",
+      "Registered SMS contract": "Registered SMS contract",
+      "eSignaBox": "eSignaBox",
+      "BPM": "BPM",
+      "Universal Signature Validator": "Universal Signature Validator",
+      "PKI": "PKI"
+    },
+    "groupList": {
+      "service": "Service",
+      "month": "Month",
+      "day": "Day"
+    },
+    "table": {
+      "title": "Statistics details",
+      "headers": {
+        "Service": "Service",
+        "quantity": "Quantity"
+      }
+    }
+  },
+  "topUps": {
+    "title": "Top ups",
+    "roleplaceholder": "Role",
+    "roles": {
+      "users": "Users",
+      "admin": "Admin"
+    },
+    "types": {
+      "Z": "Other",
+      "T": "Virtual POS",
+      "A": "Automatic"
+    },
+    "table": {
+      "headers": {
+        "date": "Date",
+        "name": "Name",
+        "credit": "Credits",
+        "type": "Type"
+      }
+    }
+  },
+  "myProfilePage": {
+    "registration": "Registration:",
+    "tooltips": {
+      "creditSettings": "Credit settings"
+    },
+    "autoTopUpForm": {
+      "title": "Auto top up settings:",
+      "minimumPlaceholder": "Minimum credits",
+      "autoTopupPlaceholder": "Auto top up amount"
+    },
+    "details": {
+      "title": "My Profile Details",
+      "company": "Company",
+      "contactName": "Contact person",
+      "cif": "ID",
+      "phone": "Telephone",
+      "email": "Email",
+      "country": "Country",
+      "state": "County/State",
+      "city": "City/Town",
+      "address": "Address",
+      "zip": "Zip Code"
+    }
+  },
+  "generalSettingsPage": {
+    "title": "Sender email settings",
+    "fromEmail": {
+      "title": "From email address:",
+      "changeForm": {
+        "title": "Enter new email address:",
+        "successMessage": "Email successfully changed"
+      }
+    },
+    "emailBody": {
+      "title": "Email body:",
+      "variables": {
+        "title": "Variables that can be used in the email body:",
+        "DST": "recipient",
+        "DSENT": "sending time",
+        "DRECV": "delivery time"
+      },
+      "types": {
+        "delivered": "DELIVERED",
+        "sent": "SENT",
+        "pending": "PENDING",
+        "failed": "FAILED"
+      },
+      "successMessage": "Email body updated"
+    }
+  },
+  "usersService": {
+    "catchAlerts": {
+      "autoTopUpUserCredit": {
+        "1600": "in order to change auto-top-up, first change the user status to 'active'"
+      },
+      "setPermissionToDeleteUser": {
+        "1600": "in order to change the delete permission, first change the user status to 'active'"
+      },
+      "updateUserProfile": {
+        "1600": "in order to change the profile data, first change the user status to 'active'"
+      },
+      "updateUserInformation": {
+        "1600": "to make changes, first change user status to 'active'"
+      },
+      "getAdditionalUserInfo": {
+        "1600": "to make changes, first change user status to 'active'"
+      }
+    }
+  }
+}
