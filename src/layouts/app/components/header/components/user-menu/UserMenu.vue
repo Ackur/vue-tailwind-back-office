@@ -58,7 +58,7 @@ function logout() {
           <UserMenuItem
             v-bind="{
               title: $t('appHeader.userMenu.profile'),
-              icon: '/media/icons/user-v3-icon.svg',
+              icon: './media/icons/user-v3-icon.svg',
               tag: 'RouterLink',
               attrs: { to: '/my-profile' }
             }"
@@ -69,7 +69,7 @@ function logout() {
           <UserMenuItem
             v-bind="{
               title: $t('appHeader.userMenu.exit'),
-              icon: '/media/icons/sign-out-icon.svg',
+              icon: './media/icons/sign-out-icon.svg',
               tag: 'button'
             }"
             @click="

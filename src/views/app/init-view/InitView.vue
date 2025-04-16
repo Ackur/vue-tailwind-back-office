@@ -8,31 +8,31 @@ const emitterEvents = inject('emitterEvents')
 
 const routeLinkList = [
   {
-    icon: '/media/icons/users-group-icon.svg',
+    icon: './media/icons/users-group-icon.svg',
     text: 'dashboardPage.links.users',
     tag: 'RouterLink',
     attrs: { to: 'users-list' }
   },
   {
-    icon: '/media/icons/add-user-icon.svg',
+    icon: './media/icons/add-user-icon.svg',
     text: 'dashboardPage.links.addNewUser',
     tag: 'button',
     action: () => emitter.emit(emitterEvents.ADD_USER_MODAL_VISIBILITY, true)
   },
   {
-    icon: '/media/icons/money-icon.svg',
+    icon: './media/icons/money-icon.svg',
     text: 'dashboardPage.links.topUps',
     tag: 'RouterLink',
     attrs: { to: 'top-ups' }
   },
   {
-    icon: '/media/icons/contacts-book-icon.svg',
+    icon: './media/icons/contacts-book-icon.svg',
     text: 'dashboardPage.links.profile',
     tag: 'RouterLink',
     attrs: { to: 'my-profile' }
   },
   {
-    icon: '/media/icons/settings-icon.svg',
+    icon: './media/icons/settings-icon.svg',
     text: 'dashboardPage.links.settings',
     tag: 'RouterLink',
     attrs: { to: 'general-settings' }

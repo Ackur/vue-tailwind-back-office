@@ -10,28 +10,28 @@ export const useNotifications = defineStore('useNotifications', () => {
       bgClass: 'bg-info',
       textClass: 'text-white',
       iconClass: '',
-      icon: '/media/icons/info-icon.svg',
+      icon: './media/icons/info-icon.svg',
       timer
     },
     warning: {
       bgClass: 'bg-warning',
       textClass: 'text-white',
       iconClass: '',
-      icon: '/media/icons/info-icon.svg',
+      icon: './media/icons/info-icon.svg',
       timer
     },
     success: {
       bgClass: 'bg-success',
       textClass: 'text-white',
       iconClass: '',
-      icon: '/media/icons/check-v2-icon.svg',
+      icon: './media/icons/check-v2-icon.svg',
       timer
     },
     error: {
       bgClass: 'bg-danger',
       textClass: 'text-white',
       iconClass: '',
-      icon: '/media/icons/info-icon.svg',
+      icon: './media/icons/info-icon.svg',
       timer
     }
   }
@@ -126,5 +126,5 @@ if (import.meta.hot) {
 //   bgClass: 'bg-primary',
 //   textClass: 'text-white',
 //   iconClass: 'text-white',
-//   icon: '/media/icons/settings-icon.svg'
+//   icon: './media/icons/settings-icon.svg'
 // })

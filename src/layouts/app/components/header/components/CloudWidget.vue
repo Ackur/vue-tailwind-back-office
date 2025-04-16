@@ -11,19 +11,19 @@ const items = computed(() => [
   {
     title: t('cloudWidget.CS.title'),
     desc: t('cloudWidget.CS.description'),
-    icon: '/media/logo/logo_CS.svg',
+    icon: './media/logo/logo_CS.svg',
     attrs: { href: 'https://admintest.clickandsign.eu/login/', target: '_blank' }
   },
   {
     title: t('cloudWidget.openum.title'),
     desc: t('cloudWidget.openum.description'),
-    icon: '/media/logo/logo_openum.svg',
+    icon: './media/logo/logo_openum.svg',
     attrs: { href: 'https://admintest.openum.eu/login/', target: '_blank' }
   },
   {
     title: t('cloudWidget.contacts.title'),
     desc: t('cloudWidget.contacts.description'),
-    icon: '/media/logo/logo_contacts.svg',
+    icon: './media/logo/logo_contacts.svg',
     attrs: { href: 'https://contacts.lleidanet.cloud', target: '_blank' }
   }
 ])
@@ -46,7 +46,7 @@ const items = computed(() => [
     <template #dropdown="{ close }">
       <div class="">
         <header
-          class="h-24 flex items-center justify-center bg-[url('/media/cloud-bg-blue.jpg')] bg-cover bg-no-repeat rounded-t-md p-2"
+          class="h-24 flex items-center justify-center bg-[url('./media/cloud-bg-blue.jpg')] bg-cover bg-no-repeat rounded-t-md p-2"
         >
           <InlineSvg src="./media/logo/lleidanet_cloud.svg" class="w-64 h-auto" />
         </header>

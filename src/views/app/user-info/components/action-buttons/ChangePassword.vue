@@ -67,7 +67,7 @@ function changeVisible(val) {
       light: true,
       size: 'sm',
       color: 'secondary',
-      leftIcon: '/media/icons/change-password-icon.svg',
+      leftIcon: './media/icons/change-password-icon.svg',
       loading: loading,
       class: 'shadow-sm'
     }"

@@ -32,7 +32,7 @@ watch(
       light: true,
       size: 'sm',
       color: 'secondary',
-      leftIcon: '/media/icons/settings-v2-icon.svg',
+      leftIcon: './media/icons/settings-v2-icon.svg',
       class: 'shadow-sm'
     }"
     actionsClasses="border-none !p-0"
