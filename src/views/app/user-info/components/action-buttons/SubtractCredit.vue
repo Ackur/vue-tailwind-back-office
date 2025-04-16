@@ -77,7 +77,7 @@ watch(
   >
     <InlineSvg
       v-tooltip:top="$t('subtractCreditForm.tooltip')"
-      src="/media/icons/minus-circle-icon.svg"
+      src="./media/icons/minus-circle-icon.svg"
       class=""
     />
     <template #content>

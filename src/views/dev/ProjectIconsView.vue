@@ -14,44 +14,44 @@
         class="absolute top-[-16px] right-[-10px] hidden group-hover:flex"
         @click="onClickCopy(icon.path)"
       >
-        <InlineSvg src="/media/icons/dublicate-icon.svg" class="text-warning" />
+        <InlineSvg src="./media/icons/dublicate-icon.svg" class="text-warning" />
       </button>
     </div>
   </div>
 </template>
 
 <script>
-const modules = import.meta.glob("/public/media/icons/*.svg");
-import { ref, computed } from "vue";
-import { copyToClipboard } from "@/core/utils/utils.js";
-import InlineSvg from "vue-inline-svg";
+const modules = import.meta.glob('/public/media/icons/*.svg')
+import { ref, computed } from 'vue'
+import { copyToClipboard } from '@/core/utils/utils.js'
+import InlineSvg from 'vue-inline-svg'
 
 export default {
-  name: "ProjectIconsView",
+  name: 'ProjectIconsView',
   components: { InlineSvg },
   setup() {
-    const search = ref("");
+    const search = ref('')
     const icons = Object.keys(modules).map((el) => {
-      const pathArray = el.split("/");
-      pathArray.splice(1, 1);
+      const pathArray = el.split('/')
+      pathArray.splice(1, 1)
       return {
         name: pathArray.at(-1),
-        path: pathArray.join("/"),
-      };
-    });
+        path: pathArray.join('/')
+      }
+    })
 
     const filteredIcons = computed(() => {
       return icons.filter((item) =>
         JSON.stringify(item.name).toLowerCase().includes(search.value.toLowerCase())
-      );
-    });
+      )
+    })
 
     const onClickCopy = (value) => {
-      console.log("onClickCopy");
-      copyToClipboard(value);
-    };
+      console.log('onClickCopy')
+      copyToClipboard(value)
+    }
 
-    return { search, icons, filteredIcons, onClickCopy };
-  },
-};
+    return { search, icons, filteredIcons, onClickCopy }
+  }
+}
 </script>

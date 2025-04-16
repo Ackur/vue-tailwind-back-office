@@ -6,7 +6,7 @@
     <div class="w-full flex items-center gap-3">
       <AppInput v-model="filters.search" :placeholder="$t('search')" clearable />
       <AppButton type="submit" icon class="rounded-lg overflow-visible">
-        <InlineSvg src="/media/icons/search-v2-icon.svg" />
+        <InlineSvg src="./media/icons/search-v2-icon.svg" />
         <div
           class="absolute w-7 h-7 hidden border-2 border-primary-dark rounded-full pointer-events-none"
           :class="[{ '!flex animate-ping': filtersHasChanges }]"

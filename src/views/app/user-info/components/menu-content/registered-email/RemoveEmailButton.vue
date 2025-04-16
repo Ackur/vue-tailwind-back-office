@@ -45,6 +45,6 @@ async function removeSubmit(close) {
     dropdownClasses="w-[300px]"
     @submit="removeSubmit"
   >
-    <InlineSvg src="/media/icons/dustbin-icon.svg" />
+    <InlineSvg src="./media/icons/dustbin-icon.svg" />
   </AppButtonQuestion>
 </template>

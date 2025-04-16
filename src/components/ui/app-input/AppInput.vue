@@ -164,7 +164,7 @@ defineExpose({ rules: props.rules, errorMsg, focus, errorHandler })
         </div>
         <div v-if="showClearableIcon" class="w-fit" @click="onClickClear">
           <InlineSvg
-            src="/media/icons/close-icon.svg"
+            src="./media/icons/close-icon.svg"
             class="w-5 text-gray-500 transition-all cursor-pointer hover:text-gray-600"
           />
         </div>
@@ -176,7 +176,7 @@ defineExpose({ rules: props.rules, errorMsg, focus, errorHandler })
           />
         </div>
         <div v-if="showErrorIcon" class="w-fit">
-          <InlineSvg src="/media/icons/info-icon.svg" class="text-danger" />
+          <InlineSvg src="./media/icons/info-icon.svg" class="text-danger" />
         </div>
       </div>
     </div>

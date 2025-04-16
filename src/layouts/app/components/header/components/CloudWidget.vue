@@ -40,7 +40,7 @@ const items = computed(() => [
     dropdownClasses="max-w-[325px] w-full border-none"
   >
     <template #default>
-      <InlineSvg src="/media/icons/lleida-cloud-icon.svg" class="w-6 h-6 max-lg:w-5 max-lg:h-5" />
+      <InlineSvg src="./media/icons/lleida-cloud-icon.svg" class="w-6 h-6 max-lg:w-5 max-lg:h-5" />
     </template>
 
     <template #dropdown="{ close }">
@@ -48,7 +48,7 @@ const items = computed(() => [
         <header
           class="h-24 flex items-center justify-center bg-[url('/media/cloud-bg-blue.jpg')] bg-cover bg-no-repeat rounded-t-md p-2"
         >
-          <InlineSvg src="/media/logo/lleidanet_cloud.svg" class="w-64 h-auto" />
+          <InlineSvg src="./media/logo/lleidanet_cloud.svg" class="w-64 h-auto" />
         </header>
         <main>
           <div>

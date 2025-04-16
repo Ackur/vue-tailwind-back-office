@@ -52,7 +52,7 @@ function changeVisible(val) {
           <slot name="content" :close="onCancel">
             <h5 class="flex items-center gap-2 font-semibold">
               <InlineSvg
-                src="/media/icons/question-circle-icon.svg"
+                src="./media/icons/question-circle-icon.svg"
                 class="w-full h-full max-w-[30px] text-secondary/60"
               />
               {{ props.question }}

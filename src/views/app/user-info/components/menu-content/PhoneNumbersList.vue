@@ -14,7 +14,7 @@ const props = defineProps({ userData: Object })
         :key="num"
         class="w-fit flex items-center gap-2 bg-slate-100 rounded-md p-2"
       >
-        <InlineSvg src="/media/icons/phone-icon.svg" class="w-5 text-success h-auto" />
+        <InlineSvg src="./media/icons/phone-icon.svg" class="w-5 text-success h-auto" />
         <a :href="`tel:${num}`" class="font-medium text-secondary">{{ num }}</a>
       </li>
       <li

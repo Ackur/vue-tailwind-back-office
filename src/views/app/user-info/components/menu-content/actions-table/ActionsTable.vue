@@ -92,7 +92,7 @@ async function removeActionSubmit(item, close) {
           size="sm"
           light
           icon
-          left-icon="/media/icons/plus-icon.svg"
+          left-icon="./media/icons/plus-icon.svg"
           class="rounded-md"
           @click="showAddActionModal = true"
         ></AppButton>
@@ -174,7 +174,7 @@ async function removeActionSubmit(item, close) {
           dropdownClasses="w-[300px]"
           @submit="removeActionSubmit(item, $event)"
         >
-          <InlineSvg src="/media/icons/dustbin-icon.svg" />
+          <InlineSvg src="./media/icons/dustbin-icon.svg" />
         </AppButtonQuestion>
       </AppTableField>
     </AppTable>

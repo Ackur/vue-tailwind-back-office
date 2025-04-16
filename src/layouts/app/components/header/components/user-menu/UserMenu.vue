@@ -46,7 +46,7 @@ function logout() {
       <header class="border-b p-4">
         <div class="flex items-center gap-2">
           <div class="h-[42px] max-w-[42px] w-full flex items-center justify-center">
-            <InlineSvg src="/media/icons/user-icon.svg" class="w-full h-auto text-secondary" />
+            <InlineSvg src="./media/icons/user-icon.svg" class="w-full h-auto text-secondary" />
           </div>
           <span class="text-xl font-medium leading-none break-all text-gray-500">
             {{ providerService.provider.name }}

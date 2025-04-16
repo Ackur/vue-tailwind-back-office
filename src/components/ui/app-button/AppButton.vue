@@ -22,7 +22,7 @@
     ]"
   >
     <div v-if="props.loading" class="absolute inset-0 grid place-items-center bg-black/10">
-      <InlineSvg src="/media/icons/spiner-icon.svg" class="animate-spin h-6 w-6" />
+      <InlineSvg src="./media/icons/spiner-icon.svg" class="animate-spin h-6 w-6" />
     </div>
     <slot name="left-icon">
       <InlineSvg v-if="typeof props.leftIcon === 'string'" :src="props.leftIcon" />

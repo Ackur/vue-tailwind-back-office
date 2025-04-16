@@ -180,7 +180,7 @@ function onChange(evt) {
       >
         <InlineSvg
           v-if="props.type === 'checkbox' && inputValue"
-          src="/media/icons/check-v2-icon.svg"
+          src="./media/icons/check-v2-icon.svg"
           class="w-5"
         />
       </div>

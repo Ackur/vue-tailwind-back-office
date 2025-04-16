@@ -30,7 +30,7 @@
         :class="[(!props.parentCollapsed || props.parentHovered) && 'opacity-100']"
       >
         <InlineSvg
-          src="/media/icons/arrow-right-v2-icon.svg"
+          src="./media/icons/arrow-right-v2-icon.svg"
           width="15"
           class="text-gray-400 rotate-90 transition-all"
           :class="[showChildrens && 'rotate-[270deg]']"

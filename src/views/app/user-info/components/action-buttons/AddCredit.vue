@@ -64,7 +64,7 @@ function resetForm() {
   >
     <InlineSvg
       v-tooltip:top="$t('tooltips.addCredit')"
-      src="/media/icons/plus-circle-icon.svg"
+      src="./media/icons/plus-circle-icon.svg"
       class=""
     />
     <template #content>

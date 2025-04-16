@@ -14,7 +14,7 @@
     >
       <RouterLink to="/" class="flex items-center gap-2 overflow-hidden">
         <InlineSvg
-          src="/media/icons/pic1-icon.svg"
+          src="./media/icons/pic1-icon.svg"
           class="w-10 h-10 ease-in-out duration-300 text-success"
           :class="[collapsed && !hovered && '!w-8 !h-8']"
         />
@@ -39,7 +39,7 @@
         @click="collapseClick"
       >
         <InlineSvg
-          src="/media/icons/double-arrow-icon.svg"
+          src="./media/icons/double-arrow-icon.svg"
           class="rotate-90 ease-in-out duration-500 delay-200"
           :class="[
             {
@@ -83,7 +83,7 @@
           class: 'text-white rounded-lg'
         }"
       >
-        <InlineSvg src="/media/icons/code-icon.svg" class="w-7 h-7" />
+        <InlineSvg src="./media/icons/code-icon.svg" class="w-7 h-7" />
       </AppDropdown>
     </div>
   </div>

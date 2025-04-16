@@ -25,7 +25,7 @@ function onSelectUser(user) {
         class="text-secondary/80 shadow-none hover:text-secondary hover:bg-gray-100"
         @click="onSelectUser(props.item)"
       >
-        <InlineSvg src="/media/icons/arrow-right-icon.svg" />
+        <InlineSvg src="./media/icons/arrow-right-icon.svg" />
       </AppButton>
     </div>
   </div>

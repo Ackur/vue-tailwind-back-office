@@ -139,7 +139,7 @@ defineExpose({ rules: props.rules, errorMsg, errorHandler })
           <slot name="append" />
         </div>
         <div v-if="showErrorIcon" class="w-fit">
-          <InlineSvg src="/media/icons/info-icon.svg" class="text-danger" />
+          <InlineSvg src="./media/icons/info-icon.svg" class="text-danger" />
         </div>
       </div>
     </div>

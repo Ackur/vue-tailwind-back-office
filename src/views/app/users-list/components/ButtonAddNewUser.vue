@@ -13,7 +13,7 @@ const emitterEvents = inject('emitterEvents')
     size="sm"
     light
     icon
-    left-icon="/media/icons/plus-icon.svg"
+    left-icon="./media/icons/plus-icon.svg"
     class="rounded-md"
     @click="emitter.emit(emitterEvents.ADD_USER_MODAL_VISIBILITY, true)"
   ></AppButton>

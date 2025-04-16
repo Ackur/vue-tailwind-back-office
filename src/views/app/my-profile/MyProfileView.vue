@@ -32,7 +32,7 @@ const menuMoveDirection = ref()
     <div class="bg-white rounded-lg shadow px-6 pt-6 max-sm:px-4 max-sm:pt-4 mb-6 max-sm:mb-4">
       <div class="flex gap-3 pb-6 max-sm:pb-4">
         <div class="w-fit h-fit bg-gray-200 rounded-lg p-1 max-md:hidden">
-          <InlineSvg src="/media/icons/user-icon.svg" class="w-20 h-auto" />
+          <InlineSvg src="./media/icons/user-icon.svg" class="w-20 h-auto" />
         </div>
         <div class="w-full">
           <div class="flex justify-between max-sm:flex-col max-sm:items-center">
@@ -45,7 +45,10 @@ const menuMoveDirection = ref()
               <StatusButton />
             </h3>
             <div class="flex flex-col gap-1 text-sm font-medium text-gray-400 leading-none">
-              <span>{{ $t('myProfilePage.registration') }} {{ format(new Date(profile.created), 'dd/MM/yyyy HH:mm') }}</span>
+              <span
+                >{{ $t('myProfilePage.registration') }}
+                {{ format(new Date(profile.created), 'dd/MM/yyyy HH:mm') }}</span
+              >
             </div>
           </div>
 
@@ -56,7 +59,7 @@ const menuMoveDirection = ref()
               >
                 <InlineSvg
                   v-tooltip:top="$t('tooltips.credits')"
-                  src="/media/icons/wallet-icon.svg"
+                  src="./media/icons/wallet-icon.svg"
                   class="text-secondary"
                 />
                 <span class="text-xl font-medium">
