@@ -2,6 +2,7 @@
 import { reactive, computed } from 'vue'
 import { useUsersService } from '@/core/service/users.service'
 import { useI18n } from 'vue-i18n'
+import { asset } from '@/core/utils/utils'
 
 import FiltersPanel from './components/FiltersPanel.vue'
 import AppTable from '@/components/ui/app-table/AppTable.vue'
@@ -71,18 +72,18 @@ function onClickSortedColumn(data) {
       <template #item-demo="{ item }">
         <InlineSvg
           v-if="Number(item.demo)"
-          src="/media/icons/done-circle-icon.svg"
+          :src="asset('media/icons/done-circle-icon.svg')"
           class="text-success"
         />
-        <InlineSvg v-else src="/media/icons/error-circle-icon.svg" class="text-gray-400" />
+        <InlineSvg v-else :src="asset('media/icons/error-circle-icon.svg')" class="text-gray-400" />
       </template>
       <template #item-status="{ item }">
         <InlineSvg
           v-if="item.status === 'A'"
-          src="/media/icons/done-circle-icon.svg"
+          :src="asset('media/icons/done-circle-icon.svg')"
           class="text-success"
         />
-        <InlineSvg v-else src="/media/icons/error-circle-icon.svg" class="text-gray-400" />
+        <InlineSvg v-else :src="asset('media/icons/error-circle-icon.svg')" class="text-gray-400" />
       </template>
       <template #item-actions="{ item }">
         <FieldActions :item="item" />

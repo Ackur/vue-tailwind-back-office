@@ -1,5 +1,7 @@
 <script setup>
 import { inject } from 'vue'
+import { asset } from '@/core/utils/utils'
+
 import InlineSvg from 'vue-inline-svg'
 import LastUsersTable from './components/LastUsersTable.vue'
 
@@ -8,31 +10,31 @@ const emitterEvents = inject('emitterEvents')
 
 const routeLinkList = [
   {
-    icon: '/media/icons/users-group-icon.svg',
+    icon: 'media/icons/users-group-icon.svg',
     text: 'dashboardPage.links.users',
     tag: 'RouterLink',
     attrs: { to: 'users-list' }
   },
   {
-    icon: '/media/icons/add-user-icon.svg',
+    icon: 'media/icons/add-user-icon.svg',
     text: 'dashboardPage.links.addNewUser',
     tag: 'button',
     action: () => emitter.emit(emitterEvents.ADD_USER_MODAL_VISIBILITY, true)
   },
   {
-    icon: '/media/icons/money-icon.svg',
+    icon: 'media/icons/money-icon.svg',
     text: 'dashboardPage.links.topUps',
     tag: 'RouterLink',
     attrs: { to: 'top-ups' }
   },
   {
-    icon: '/media/icons/contacts-book-icon.svg',
+    icon: 'media/icons/contacts-book-icon.svg',
     text: 'dashboardPage.links.profile',
     tag: 'RouterLink',
     attrs: { to: 'my-profile' }
   },
   {
-    icon: '/media/icons/settings-icon.svg',
+    icon: 'media/icons/settings-icon.svg',
     text: 'dashboardPage.links.settings',
     tag: 'RouterLink',
     attrs: { to: 'general-settings' }
@@ -56,7 +58,7 @@ const routeLinkList = [
             class="absolute bottom-0 top-full w-full bg-primary/90 transition-all duration-300 z-0 group-hover:top-0"
           ></div>
           <InlineSvg
-            :src="item.icon"
+            :src="asset(item.icon)"
             class="w-10 h-auto text-primary drop-shadow-[1px_1px_1px_rgba(0,0,0,0.5)] transition-all duration-300 delay-100 z-[1] group-hover:text-white"
           />
           <span class="transition-all duration-300 delay-100 z-[1] group-hover:text-white">

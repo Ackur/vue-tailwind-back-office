@@ -4,6 +4,8 @@ import { isThisRefsValid, email } from '@/core/utils/fields-rules.js'
 import { useProviderService } from '@/core/service/provider.service'
 import { useNotifications } from '@/components/ui/app-notifycation/composables/useNotify'
 import { useI18n } from 'vue-i18n'
+import { asset } from '@/core/utils/utils'
+
 import vTooltip from '@/directives/tooltip.directive'
 import InlineSvg from 'vue-inline-svg'
 import AppButtonQuestion from '@/components/ui/app-button-question/AppButtonQuestion.vue'
@@ -69,7 +71,7 @@ function changeVisible(val) {
     @submit="submit"
     @changeVisible="changeVisible"
   >
-    <InlineSvg v-tooltip:top="'Change email'" src="/media/icons/edit-v2-icon.svg" />
+    <InlineSvg v-tooltip:top="'Change email'" :src="asset('media/icons/edit-v2-icon.svg')" />
     <template #content>
       <p class="font-normal text-gray-400 leading-tight">
         {{ t('generalSettingsPage.fromEmail.changeForm.title') }}

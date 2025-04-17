@@ -3,6 +3,7 @@ import { ref } from 'vue'
 import { useUsersService } from '@/core/service/users.service'
 import { useNotifications } from '@/components/ui/app-notifycation/composables/useNotify'
 import { useI18n } from 'vue-i18n'
+import { asset } from '@/core/utils/utils'
 
 import InlineSvg from 'vue-inline-svg'
 import AppButtonQuestion from '@/components/ui/app-button-question/AppButtonQuestion.vue'
@@ -45,6 +46,6 @@ async function removeSubmit(close) {
     dropdownClasses="w-[300px]"
     @submit="removeSubmit"
   >
-    <InlineSvg src="/media/icons/dustbin-icon.svg" />
+    <InlineSvg :src="asset('media/icons/dustbin-icon.svg')" />
   </AppButtonQuestion>
 </template>

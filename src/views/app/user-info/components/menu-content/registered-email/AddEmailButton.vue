@@ -4,6 +4,7 @@ import { isThisRefsValid, email } from '@/core/utils/fields-rules.js'
 import { useUsersService } from '@/core/service/users.service'
 import { useNotifications } from '@/components/ui/app-notifycation/composables/useNotify'
 import { useI18n } from 'vue-i18n'
+import { asset } from '@/core/utils/utils'
 
 import vTooltip from '@/directives/tooltip.directive'
 import InlineSvg from 'vue-inline-svg'
@@ -80,7 +81,7 @@ function changeVisible(val) {
   >
     <InlineSvg
       v-tooltip:top="$t('userRegisteredEmail.whiteList.add.tooltip')"
-      src="/media/icons/plus-circle-icon.svg"
+      :src="asset('media/icons/plus-circle-icon.svg')"
     />
     <template #content>
       <p class="font-normal text-gray-400 leading-tight">

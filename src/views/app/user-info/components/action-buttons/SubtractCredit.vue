@@ -4,6 +4,7 @@ import { isThisRefsValid } from '@/core/utils/fields-rules.js'
 import { useUsersService } from '@/core/service/users.service'
 import { useNotifications } from '@/components/ui/app-notifycation/composables/useNotify'
 import { useI18n } from 'vue-i18n'
+import { asset } from '@/core/utils/utils'
 
 import vTooltip from '@/directives/tooltip.directive'
 import InlineSvg from 'vue-inline-svg'
@@ -77,7 +78,7 @@ watch(
   >
     <InlineSvg
       v-tooltip:top="$t('subtractCreditForm.tooltip')"
-      src="/media/icons/minus-circle-icon.svg"
+      :src="asset('media/icons/minus-circle-icon.svg')"
       class=""
     />
     <template #content>

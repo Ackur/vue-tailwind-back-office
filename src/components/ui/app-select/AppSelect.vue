@@ -1,6 +1,6 @@
 <script setup>
 import { ref, reactive, computed, watch, nextTick } from 'vue'
-import { isEmpty, makeid } from '@/core/utils/utils'
+import { isEmpty, makeid, asset } from '@/core/utils/utils'
 import { sizeClasses, themeClasses } from './app-select.config'
 
 import InlineSvg from 'vue-inline-svg'
@@ -180,13 +180,13 @@ defineExpose({ errorMsg })
       </span>
       <div v-if="clearable && !isEmpty(selectedItem)" class="w-fit px-1" @click.stop="onClickClear">
         <InlineSvg
-          src="/media/icons/close-icon.svg"
+          :src="asset('media/icons/close-icon.svg')"
           class="w-5 text-gray-500 transition-all cursor-pointer hover:text-gray-600"
         />
       </div>
       <div class="w-fit p-2">
         <InlineSvg
-          src="/media/icons/arrow-right-v2-icon.svg"
+          :src="asset('media/icons/arrow-right-v2-icon.svg')"
           width="15"
           class="text-gray-400 rotate-90 transition-all"
           :class="[show && 'rotate-[270deg]']"

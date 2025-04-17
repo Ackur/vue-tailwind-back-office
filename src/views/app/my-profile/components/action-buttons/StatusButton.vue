@@ -1,6 +1,7 @@
 <script setup>
 import { computed } from 'vue'
 import { useProviderService } from '@/core/service/provider.service'
+import { asset } from '@/core/utils/utils'
 
 import vTooltip from '@/directives/tooltip.directive'
 import InlineSvg from 'vue-inline-svg'
@@ -36,7 +37,7 @@ const currentStatusData = computed(() => {
   >
     <InlineSvg
       v-tooltip:top="$t(currentStatusData.tooltip)"
-      src="/media/icons/success-icon.svg"
+      :src="asset('media/icons/success-icon.svg')"
       :class="currentStatusData.iconClasses"
     />
   </AppButton>

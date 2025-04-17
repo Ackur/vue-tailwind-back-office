@@ -1,6 +1,7 @@
 <script setup>
 import { ref, computed, useSlots, watch, onMounted, onUnmounted } from 'vue'
-import { isValidDate } from '@/core/utils/utils.js'
+import { isValidDate, asset } from '@/core/utils/utils.js'
+
 import InlineSvg from 'vue-inline-svg'
 import TableLoader from './TableLoader.vue'
 import AppSwitchBox from '../app-switchbox/AppSwitchBox.vue'
@@ -200,14 +201,14 @@ onUnmounted(() => {
               {{ head.header }}
               <div v-if="head.sorted" class="flex flex-col ml-0.5">
                 <InlineSvg
-                  src="/media/icons/arrow-right-v2-icon.svg"
+                  :src="asset('media/icons/arrow-right-v2-icon.svg')"
                   class="w-3 h-fit text-gray-400 -rotate-90 translate-y-0.5"
                   :class="[
                     { 'text-gray-800': sortedBy === head.field && sortedDir === sortedTypes.ASC }
                   ]"
                 />
                 <InlineSvg
-                  src="/media/icons/arrow-right-v2-icon.svg"
+                  :src="asset('media/icons/arrow-right-v2-icon.svg')"
                   class="w-3 h-fit text-gray-400 rotate-90 -translate-y-0.5"
                   :class="[
                     { 'text-gray-800': sortedBy === head.field && sortedDir === sortedTypes.DESC }

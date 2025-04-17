@@ -1,6 +1,6 @@
 <script setup>
 import { ref, reactive, computed, watch, onMounted } from 'vue'
-import { isEmpty } from '@/core/utils/utils'
+import { asset } from '@/core/utils/utils'
 import { sizeClasses, themeClasses, inputRightPaddingClass } from './app-textarea.config'
 import { fieldErrorHandler } from '@/core/utils/fields-rules'
 import InlineSvg from 'vue-inline-svg'
@@ -139,7 +139,7 @@ defineExpose({ rules: props.rules, errorMsg, errorHandler })
           <slot name="append" />
         </div>
         <div v-if="showErrorIcon" class="w-fit">
-          <InlineSvg src="/media/icons/info-icon.svg" class="text-danger" />
+          <InlineSvg :src="asset('media/icons/info-icon.svg')" class="text-danger" />
         </div>
       </div>
     </div>

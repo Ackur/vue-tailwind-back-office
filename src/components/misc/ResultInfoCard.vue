@@ -19,8 +19,8 @@ const props = defineProps({
   }
 })
 const types = {
-  success: { icon: '/media/icons/check-v2-icon.svg', iconClasses: 'border-success text-success' },
-  danger: { icon: '/media/icons/close-icon.svg', iconClasses: 'border-danger text-danger' }
+  success: { icon: 'media/icons/check-v2-icon.svg', iconClasses: 'border-success text-success' },
+  danger: { icon: 'media/icons/close-icon.svg', iconClasses: 'border-danger text-danger' }
 }
 </script>
 
@@ -34,7 +34,7 @@ const types = {
         class="w-32 h-32 rounded-full border-[8px] drop-shadow-[2px_4px_3px_gray]"
         :class="[types[type].iconClasses]"
       >
-        <InlineSvg :src="types[type].icon" class="w-full h-auto" />
+        <InlineSvg :src="asset(types[type].icon)" class="w-full h-auto" />
       </div>
       <h1 class="text-2xl font-semibold mt-6 mb-3">{{ props.title }}</h1>
       <p class="text-center leading-tight">{{ props.desc }}</p>

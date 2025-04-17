@@ -1,5 +1,7 @@
 <script setup>
 import { ref, computed, getCurrentInstance } from 'vue'
+import { asset } from '@/core/utils/utils'
+
 import InlineSvg from 'vue-inline-svg'
 
 const props = defineProps({
@@ -121,7 +123,7 @@ function onClickOverlay(evt) {
         >
           <InlineSvg
             v-if="props.closeButton"
-            src="/media/icons/close-icon.svg"
+            :src="asset('media/icons/close-icon.svg')"
             class="absolute right-5 top-3.5 block w-5 text-gray-600 cursor-pointer transition hover:text-gray-800 hover:scale-110 z-10"
             @click="emit('click:close', true)"
           />

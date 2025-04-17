@@ -3,7 +3,7 @@
     <div v-for="icon in filteredIcons" :key="icon" class="relative group">
       <span>
         <InlineSvg
-          :src="icon.path"
+          :src="asset(icon.path)"
           width="42"
           height="42"
           class="hover:text-success-darken"
@@ -14,7 +14,7 @@
         class="absolute top-[-16px] right-[-10px] hidden group-hover:flex"
         @click="onClickCopy(icon.path)"
       >
-        <InlineSvg src="/media/icons/dublicate-icon.svg" class="text-warning" />
+        <InlineSvg :src="asset('media/icons/dublicate-icon.svg')" class="text-warning" />
       </button>
     </div>
   </div>
@@ -23,7 +23,7 @@
 <script>
 const modules = import.meta.glob('/public/media/icons/*.svg')
 import { ref, computed } from 'vue'
-import { copyToClipboard } from '@/core/utils/utils.js'
+import { copyToClipboard, asset } from '@/core/utils/utils.js'
 import InlineSvg from 'vue-inline-svg'
 
 export default {
@@ -51,7 +51,7 @@ export default {
       copyToClipboard(value)
     }
 
-    return { search, icons, filteredIcons, onClickCopy }
+    return { search, icons, filteredIcons, onClickCopy, asset }
   }
 }
 </script>

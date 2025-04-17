@@ -9,8 +9,8 @@ export default {
 <script setup>
 import { ref, computed } from 'vue'
 import { useProviderService } from '@/core/service/provider.service'
-
 import { format } from 'date-fns'
+import { asset } from '@/core/utils/utils'
 
 import vTooltip from '@/directives/tooltip.directive'
 import InlineSvg from 'vue-inline-svg'
@@ -32,7 +32,7 @@ const menuMoveDirection = ref()
     <div class="bg-white rounded-lg shadow px-6 pt-6 max-sm:px-4 max-sm:pt-4 mb-6 max-sm:mb-4">
       <div class="flex gap-3 pb-6 max-sm:pb-4">
         <div class="w-fit h-fit bg-gray-200 rounded-lg p-1 max-md:hidden">
-          <InlineSvg src="/media/icons/user-icon.svg" class="w-20 h-auto" />
+          <InlineSvg :src="asset('media/icons/user-icon.svg')" class="w-20 h-auto" />
         </div>
         <div class="w-full">
           <div class="flex justify-between max-sm:flex-col max-sm:items-center">
@@ -59,7 +59,7 @@ const menuMoveDirection = ref()
               >
                 <InlineSvg
                   v-tooltip:top="$t('tooltips.credits')"
-                  src="/media/icons/wallet-icon.svg"
+                  :src="asset('media/icons/wallet-icon.svg')"
                   class="text-secondary"
                 />
                 <span class="text-xl font-medium">

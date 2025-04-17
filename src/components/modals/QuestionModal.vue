@@ -1,5 +1,7 @@
 <script setup>
 import { computed } from 'vue'
+import { asset } from '@/core/utils/utils'
+
 import InlineSvg from 'vue-inline-svg'
 import AppModal from '@/components/ui/app-modal/AppModal.vue'
 import AppButton from '@/components/ui/app-button/AppButton.vue'
@@ -35,7 +37,10 @@ function onApply() {
     @click:outside="onClose"
   >
     <div class="flex items-center gap-2 font-medium leading-snug">
-      <InlineSvg src="/media/icons/question-circle-icon.svg" class="w-10 h-auto text-secondary" />
+      <InlineSvg
+        :src="asset('media/icons/question-circle-icon.svg')"
+        class="w-10 h-auto text-secondary"
+      />
       {{ $te(props.text) ? $t(props.text) : props.text }}
     </div>
     <template #footer>

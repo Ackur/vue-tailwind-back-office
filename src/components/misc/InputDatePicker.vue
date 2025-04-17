@@ -15,6 +15,8 @@ import {
   parseISO
 } from 'date-fns'
 import { ref, computed } from 'vue'
+import { asset } from '@/core/utils/utils'
+
 import VueDatePicker from '@vuepic/vue-datepicker'
 import AppInput from '@/components/ui/app-input/AppInput.vue'
 import InlineSvg from 'vue-inline-svg'
@@ -102,7 +104,7 @@ defineExpose({ presetRanges })
       >
         <template #append>
           <div class="text-primary">
-            <InlineSvg src="/media/icons/calendar-icon.svg" />
+            <InlineSvg :src="asset('media/icons/calendar-icon.svg')" />
           </div>
         </template>
       </AppInput>

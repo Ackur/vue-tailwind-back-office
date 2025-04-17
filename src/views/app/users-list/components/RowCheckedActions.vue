@@ -3,6 +3,7 @@ import { ref } from 'vue'
 import { useUsersService } from '@/core/service/users.service'
 import { useNotifications } from '@/components/ui/app-notifycation/composables/useNotify.js'
 import { useI18n } from 'vue-i18n'
+import { asset } from '@/core/utils/utils'
 
 import vTooltip from '@/directives/tooltip.directive'
 import InlineSvg from 'vue-inline-svg'
@@ -20,7 +21,7 @@ const currentAction = ref({})
 const actions = ref([
   {
     title: 'user',
-    icon: '/media/icons/accept-user-icon.svg',
+    icon: 'media/icons/accept-user-icon.svg',
     color: 'secondary',
     tooltip: 'usersTable.checkedAction.userOn.tooltip',
     question: 'usersTable.checkedAction.userOn.question',
@@ -30,7 +31,7 @@ const actions = ref([
   },
   {
     title: 'user',
-    icon: '/media/icons/disable-user-icon.svg',
+    icon: 'media/icons/disable-user-icon.svg',
     color: 'secondary',
     tooltip: 'usersTable.checkedAction.userOff.tooltip',
     question: 'usersTable.checkedAction.userOff.question',
@@ -40,7 +41,7 @@ const actions = ref([
   },
   {
     title: 'demo',
-    icon: '/media/icons/demo-on-v2-icon.svg',
+    icon: 'media/icons/demo-on-v2-icon.svg',
     color: 'secondary',
     tooltip: 'usersTable.checkedAction.demoOn.tooltip',
     question: 'usersTable.checkedAction.demoOn.question',
@@ -50,7 +51,7 @@ const actions = ref([
   },
   {
     title: 'demo',
-    icon: '/media/icons/demo-off-v2-icon.svg',
+    icon: 'media/icons/demo-off-v2-icon.svg',
     color: 'secondary',
     tooltip: 'usersTable.checkedAction.demoOff.tooltip',
     question: 'usersTable.checkedAction.demoOff.question',
@@ -106,7 +107,7 @@ async function submitAction() {
         class="shadow-none rounded-md"
         @click="onActionClick(item)"
       >
-        <InlineSvg :src="item.icon" :class="[item.iconClasses]" />
+        <InlineSvg :src="asset(item.icon)" :class="[item.iconClasses]" />
       </AppButton>
 
       <div

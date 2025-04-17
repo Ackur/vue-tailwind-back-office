@@ -1,4 +1,6 @@
 <script setup>
+import { asset } from '@/core/utils/utils'
+
 import InlineSvg from 'vue-inline-svg'
 
 const props = defineProps({
@@ -18,7 +20,7 @@ const props = defineProps({
   >
     <InlineSvg
       v-if="props.icon"
-      :src="props.icon"
+      :src="asset(props.icon)"
       class="text-primary w-full min-w-[24px] max-w-[24px] h-auto"
       :class="[props.iconClasses]"
     />

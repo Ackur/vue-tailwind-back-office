@@ -20,7 +20,7 @@ const languagesList = computed(() => {
     return {
       title: value,
       value: key,
-      //   icon: '/media/icons/commit-icon.svg',
+      //   icon: 'media/icons/commit-icon.svg',
       iconClasses: 'rotate-90',
       active: key === locale.value,
       action: onSelect
@@ -56,7 +56,7 @@ onMounted(initialize)
       <UserMenuItem
         v-bind="{
           title: $t('appHeader.userMenu.language'),
-          icon: '/media/icons/earth-icon.svg',
+          icon: 'media/icons/earth-icon.svg',
           tag: 'button'
         }"
       >

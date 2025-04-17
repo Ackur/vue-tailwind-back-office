@@ -5,6 +5,7 @@ import { sizeClasses, themeClasses, inputRightPaddingClass } from './app-input.c
 import { fieldErrorHandler } from '@/core/utils/fields-rules'
 import InlineSvg from 'vue-inline-svg'
 import FieldError from '@/components/misc/FieldError.vue'
+import { asset } from '../../../core/utils/utils'
 
 const props = defineProps({
   modelValue: {
@@ -164,19 +165,19 @@ defineExpose({ rules: props.rules, errorMsg, focus, errorHandler })
         </div>
         <div v-if="showClearableIcon" class="w-fit" @click="onClickClear">
           <InlineSvg
-            src="/media/icons/close-icon.svg"
+            :src="asset('media/icons/close-icon.svg')"
             class="w-5 text-gray-500 transition-all cursor-pointer hover:text-gray-600"
           />
         </div>
         <div v-if="showPasswordIcon" class="w-fit">
           <InlineSvg
-            :src="`/media/icons/${inputType === 'password' ? 'eye' : 'eye-close'}-icon.svg`"
+            :src="asset(`media/icons/${inputType === 'password' ? 'eye' : 'eye-close'}-icon.svg`)"
             class="w-8 h-8 text-primary cursor-pointer select-none"
             @click="inputType = inputType === 'password' ? 'text' : 'password'"
           />
         </div>
         <div v-if="showErrorIcon" class="w-fit">
-          <InlineSvg src="/media/icons/info-icon.svg" class="text-danger" />
+          <InlineSvg :src="asset('media/icons/info-icon.svg')" class="text-danger" />
         </div>
       </div>
     </div>

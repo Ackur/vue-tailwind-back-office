@@ -1,5 +1,7 @@
 <script setup>
 import { computed } from 'vue'
+import { asset } from '@/core/utils/utils'
+
 import InlineSvg from 'vue-inline-svg'
 
 const props = defineProps({
@@ -180,7 +182,7 @@ function onChange(evt) {
       >
         <InlineSvg
           v-if="props.type === 'checkbox' && inputValue"
-          src="/media/icons/check-v2-icon.svg"
+          :src="asset('media/icons/check-v2-icon.svg')"
           class="w-5"
         />
       </div>

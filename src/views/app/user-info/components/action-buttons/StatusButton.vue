@@ -3,6 +3,7 @@ import { ref, computed } from 'vue'
 import { useUsersService } from '@/core/service/users.service'
 import { useNotifications } from '@/components/ui/app-notifycation/composables/useNotify'
 import { useI18n } from 'vue-i18n'
+import { asset } from '@/core/utils/utils'
 
 import vTooltip from '@/directives/tooltip.directive'
 import InlineSvg from 'vue-inline-svg'
@@ -69,7 +70,7 @@ async function submit(close) {
   >
     <InlineSvg
       v-tooltip:top="$t(currentStatusData.tooltip)"
-      src="/media/icons/success-icon.svg"
+      :src="asset('media/icons/success-icon.svg')"
       :class="currentStatusData.iconClasses"
     />
   </AppButtonQuestion>

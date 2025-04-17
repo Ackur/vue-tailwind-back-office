@@ -3,6 +3,7 @@ import { ref, reactive, computed } from 'vue'
 import { useUsersService } from '@/core/service/users.service'
 import { useNotifications } from '@/components/ui/app-notifycation/composables/useNotify'
 import { useI18n } from 'vue-i18n'
+import { asset } from '@/core/utils/utils'
 
 import vTooltip from '@/directives/tooltip.directive'
 import FiltersPanel from './FiltersPanel.vue'
@@ -92,7 +93,7 @@ async function removeActionSubmit(item, close) {
           size="sm"
           light
           icon
-          left-icon="/media/icons/plus-icon.svg"
+          left-icon="media/icons/plus-icon.svg"
           class="rounded-md"
           @click="showAddActionModal = true"
         ></AppButton>
@@ -174,7 +175,7 @@ async function removeActionSubmit(item, close) {
           dropdownClasses="w-[300px]"
           @submit="removeActionSubmit(item, $event)"
         >
-          <InlineSvg src="/media/icons/dustbin-icon.svg" />
+          <InlineSvg :src="asset('media/icons/dustbin-icon.svg')" />
         </AppButtonQuestion>
       </AppTableField>
     </AppTable>

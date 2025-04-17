@@ -1,6 +1,8 @@
 <script setup>
 import { nextTick } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { asset } from '@/core/utils/utils'
+
 import InlineSvg from 'vue-inline-svg'
 import AppButton from '@/components/ui/app-button/AppButton.vue'
 import AppDropdown from '@/components/ui/app-dropdown/AppDropdown.vue'
@@ -52,7 +54,7 @@ function changeVisible(val) {
           <slot name="content" :close="onCancel">
             <h5 class="flex items-center gap-2 font-semibold">
               <InlineSvg
-                src="/media/icons/question-circle-icon.svg"
+                :src="asset('media/icons/question-circle-icon.svg')"
                 class="w-full h-full max-w-[30px] text-secondary/60"
               />
               {{ props.question }}

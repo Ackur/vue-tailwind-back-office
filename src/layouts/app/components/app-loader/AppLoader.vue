@@ -1,4 +1,6 @@
 <script setup>
+import { asset } from '@/core/utils/utils'
+
 import InlineSvg from 'vue-inline-svg'
 
 const props = defineProps({ show: Boolean })
@@ -18,7 +20,7 @@ const props = defineProps({ show: Boolean })
       class="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center"
     >
       <InlineSvg
-        src="/media/icons/pic1-icon.svg"
+        :src="asset('media/icons/pic1-icon.svg')"
         class="w-[200px] h-[200px] ease-in-out duration-300 text-success animate"
       />
     </div>

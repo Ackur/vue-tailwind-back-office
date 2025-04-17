@@ -1,11 +1,11 @@
 <script setup>
 import '@vuepic/vue-datepicker/dist/main.css'
+import { asset } from '@/core/utils/utils'
+
 import {
   format,
   endOfMonth,
-  startOfDay,
   endOfDay,
-  subDays,
   startOfWeek,
   endOfWeek,
   subWeeks,
@@ -97,7 +97,7 @@ defineExpose({ presetRanges })
       >
         <template #append>
           <div class="text-primary">
-            <InlineSvg src="/media/icons/calendar-icon.svg" />
+            <InlineSvg :src="asset('media/icons/calendar-icon.svg')" />
           </div>
         </template>
       </AppInput>

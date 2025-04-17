@@ -1,6 +1,7 @@
 <script setup>
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { asset } from '@/core/utils/utils'
 
 import InlineSvg from 'vue-inline-svg'
 import AppDropdown from '@/components/ui/app-dropdown/AppDropdown.vue'
@@ -11,19 +12,19 @@ const items = computed(() => [
   {
     title: t('cloudWidget.CS.title'),
     desc: t('cloudWidget.CS.description'),
-    icon: '/media/logo/logo_CS.svg',
+    icon: 'media/logo/logo_CS.svg',
     attrs: { href: 'https://admintest.clickandsign.eu/login/', target: '_blank' }
   },
   {
     title: t('cloudWidget.openum.title'),
     desc: t('cloudWidget.openum.description'),
-    icon: '/media/logo/logo_openum.svg',
+    icon: 'media/logo/logo_openum.svg',
     attrs: { href: 'https://admintest.openum.eu/login/', target: '_blank' }
   },
   {
     title: t('cloudWidget.contacts.title'),
     desc: t('cloudWidget.contacts.description'),
-    icon: '/media/logo/logo_contacts.svg',
+    icon: 'media/logo/logo_contacts.svg',
     attrs: { href: 'https://contacts.lleidanet.cloud', target: '_blank' }
   }
 ])
@@ -40,15 +41,18 @@ const items = computed(() => [
     dropdownClasses="max-w-[325px] w-full border-none"
   >
     <template #default>
-      <InlineSvg src="/media/icons/lleida-cloud-icon.svg" class="w-6 h-6 max-lg:w-5 max-lg:h-5" />
+      <InlineSvg
+        :src="asset('media/icons/lleida-cloud-icon.svg')"
+        class="w-6 h-6 max-lg:w-5 max-lg:h-5"
+      />
     </template>
 
     <template #dropdown="{ close }">
       <div class="">
         <header
-          class="h-24 flex items-center justify-center bg-[url('/media/cloud-bg-blue.jpg')] bg-cover bg-no-repeat rounded-t-md p-2"
+          class="h-24 flex items-center justify-center bg-[url('media/cloud-bg-blue.jpg')] bg-cover bg-no-repeat rounded-t-md p-2"
         >
-          <InlineSvg src="/media/logo/lleidanet_cloud.svg" class="w-64 h-auto" />
+          <InlineSvg :src="asset('media/logo/lleidanet_cloud.svg')" class="w-64 h-auto" />
         </header>
         <main>
           <div>

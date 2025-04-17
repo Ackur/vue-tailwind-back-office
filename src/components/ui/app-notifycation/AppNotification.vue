@@ -1,4 +1,5 @@
 <script setup>
+import { asset } from '@/core/utils/utils.js'
 import { useNotifications } from './composables/useNotify.js'
 import InlineSvg from 'vue-inline-svg'
 
@@ -23,7 +24,7 @@ const $toaster = useNotifications()
         @mouseenter="$toaster.mouseenter(idx)"
         @mouseleave="$toaster.mouseleave(idx)"
       >
-        <InlineSvg :src="item.icon" class="h-6 w-6 min-w-[24px]" :class="[item.iconClass]" />
+        <InlineSvg :src="asset(item.icon)" class="h-6 w-6 min-w-[24px]" :class="[item.iconClass]" />
         <div>
           <h6 class="font-semibold leading-none">{{ item.title }}</h6>
           <p class="leading-none" :class="[item.textClass]">{{ item.text }}</p>

@@ -2,8 +2,9 @@
 import { ref } from 'vue'
 import { useAuthService } from '@/core/service/auth.service'
 import { useProviderService } from '@/core/service/provider.service'
-
 import { useRouter } from 'vue-router'
+import { asset } from '@/core/utils/utils'
+
 import InlineSvg from 'vue-inline-svg'
 import AppDropdown from '@/components/ui/app-dropdown/AppDropdown.vue'
 import QuestionModal from '@/components/modals/QuestionModal.vue'
@@ -46,7 +47,10 @@ function logout() {
       <header class="border-b p-4">
         <div class="flex items-center gap-2">
           <div class="h-[42px] max-w-[42px] w-full flex items-center justify-center">
-            <InlineSvg src="/media/icons/user-icon.svg" class="w-full h-auto text-secondary" />
+            <InlineSvg
+              :src="asset('media/icons/user-icon.svg')"
+              class="w-full h-auto text-secondary"
+            />
           </div>
           <span class="text-xl font-medium leading-none break-all text-gray-500">
             {{ providerService.provider.name }}
@@ -58,7 +62,7 @@ function logout() {
           <UserMenuItem
             v-bind="{
               title: $t('appHeader.userMenu.profile'),
-              icon: '/media/icons/user-v3-icon.svg',
+              icon: 'media/icons/user-v3-icon.svg',
               tag: 'RouterLink',
               attrs: { to: '/my-profile' }
             }"
@@ -69,7 +73,7 @@ function logout() {
           <UserMenuItem
             v-bind="{
               title: $t('appHeader.userMenu.exit'),
-              icon: '/media/icons/sign-out-icon.svg',
+              icon: 'media/icons/sign-out-icon.svg',
               tag: 'button'
             }"
             @click="

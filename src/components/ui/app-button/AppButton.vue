@@ -22,21 +22,22 @@
     ]"
   >
     <div v-if="props.loading" class="absolute inset-0 grid place-items-center bg-black/10">
-      <InlineSvg src="/media/icons/spiner-icon.svg" class="animate-spin h-6 w-6" />
+      <InlineSvg :src="asset('media/icons/spiner-icon.svg')" class="animate-spin h-6 w-6" />
     </div>
     <slot name="left-icon">
-      <InlineSvg v-if="typeof props.leftIcon === 'string'" :src="props.leftIcon" />
+      <InlineSvg v-if="typeof props.leftIcon === 'string'" :src="asset(props.leftIcon)" />
     </slot>
     <slot />
 
     <slot name="right-icon">
-      <InlineSvg v-if="typeof props.rightIcon === 'string'" :src="props.rightIcon" />
+      <InlineSvg v-if="typeof props.rightIcon === 'string'" :src="asset(props.rightIcon)" />
     </slot>
   </component>
 </template>
 
 <script setup>
 import { ref } from 'vue'
+import { asset } from '@/core/utils/utils'
 import {
   buttonClasses,
   colorClasses,

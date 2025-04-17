@@ -38,7 +38,7 @@ const getExportDataString = () => {
     size="sm"
     light
     icon
-    left-icon="/media/icons/download-icon.svg"
+    left-icon="media/icons/download-icon.svg"
     class="rounded-md max-[480px]:order-0"
   ></AppButton>
 </template>

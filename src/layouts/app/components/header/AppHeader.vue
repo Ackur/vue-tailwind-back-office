@@ -5,7 +5,7 @@
     <HeaderTitle class="max-md:hidden" />
     <RouterLink to="/">
       <InlineSvg
-        src="/media/icons/pic1-icon.svg"
+        :src="asset('media/icons/pic1-icon.svg')"
         class="min-w-[38px] h-auto text-success hidden max-md:block"
       />
     </RouterLink>
@@ -18,7 +18,7 @@
         </span>
         <InlineSvg
           v-tooltip:top="$t('tooltips.credits')"
-          src="/media/icons/wallet-icon.svg"
+          :src="asset('media/icons/wallet-icon.svg')"
           class="w-6 h-auto text-primary drop-shadow-xl shadow-primary max-lg:w-5 max-lg:h-5"
         />
       </div>
@@ -31,6 +31,7 @@
 
 <script setup>
 import { useProviderService } from '@/core/service/provider.service'
+import { asset } from '@/core/utils/utils'
 
 import vTooltip from '@/directives/tooltip.directive'
 import InlineSvg from 'vue-inline-svg'

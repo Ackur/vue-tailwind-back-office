@@ -1,5 +1,7 @@
 <script setup>
 import { useUsersService } from '@/core/service/users.service'
+import { asset } from '@/core/utils/utils'
+
 import vTooltip from '@/directives/tooltip.directive'
 import InlineSvg from 'vue-inline-svg'
 import AppButton from '@/components/ui/app-button/AppButton.vue'
@@ -25,7 +27,7 @@ function onSelectUser(user) {
         class="text-secondary/80 shadow-none hover:text-secondary hover:bg-gray-100"
         @click="onSelectUser(props.item)"
       >
-        <InlineSvg src="/media/icons/arrow-right-icon.svg" />
+        <InlineSvg :src="asset('media/icons/arrow-right-icon.svg')" />
       </AppButton>
     </div>
   </div>

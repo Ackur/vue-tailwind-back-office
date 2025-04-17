@@ -1,6 +1,7 @@
 <script setup>
 import { reactive, computed } from 'vue'
 import { useUsersService } from '@/core/service/users.service'
+import { asset } from '@/core/utils/utils'
 
 import AppTable from '@/components/ui/app-table/AppTable.vue'
 import AppTableField from '@/components/ui/app-table/AppTableField.vue'
@@ -55,10 +56,10 @@ usersService.getUsers({
       <AppTableField :header="$t('table.headers.status')" field="status" v-slot="{ item }">
         <InlineSvg
           v-if="item.status === 'A'"
-          src="/media/icons/done-circle-icon.svg"
+          :src="asset('media/icons/done-circle-icon.svg')"
           class="text-success"
         />
-        <InlineSvg v-else src="/media/icons/error-circle-icon.svg" class="text-gray-400" />
+        <InlineSvg v-else :src="asset('media/icons/error-circle-icon.svg')" class="text-gray-400" />
       </AppTableField>
       <AppTableField :header="$t('table.headers.actions')" v-slot="{ item }">
         <FieldActions :item="item" />

@@ -57,7 +57,6 @@ function onChange(size) {
             ]"
             @click="onChange(size), close()"
           >
-            <!-- <InlineSvg v-if="item.icon" :src="item.icon" class="text-primary" /> -->
             {{ size }}
           </li>
         </ul>
