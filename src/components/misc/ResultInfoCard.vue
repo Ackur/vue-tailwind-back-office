@@ -1,4 +1,6 @@
 <script setup>
+import { asset } from '@/core/utils/utils'
+
 import InlineSvg from 'vue-inline-svg'
 
 const props = defineProps({
