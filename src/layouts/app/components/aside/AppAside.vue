@@ -119,21 +119,21 @@ const devMenuItems = [
   {
     title: 'Dev Fonts',
     tag: 'RouterLink',
-    icon: '/media/icons/code-icon.svg',
+    icon: 'media/icons/code-icon.svg',
     iconClasses: 'w-4',
     attrs: { to: '/dev-fonts' }
   },
   {
     title: 'Dev Icons',
     tag: 'RouterLink',
-    icon: '/media/icons/code-icon.svg',
+    icon: 'media/icons/code-icon.svg',
     iconClasses: 'w-4',
     attrs: { to: '/dev-icons' }
   },
   {
     title: 'Dev Buttons',
     tag: 'RouterLink',
-    icon: '/media/icons/code-icon.svg',
+    icon: 'media/icons/code-icon.svg',
     iconClasses: 'w-4',
     attrs: { to: '/dev-buttons' }
   }
@@ -141,13 +141,13 @@ const devMenuItems = [
 const menuItems = computed(() => [
   {
     title: t('appAside.menuItems.dashboard'),
-    icon: '/media/icons/compiling-icon.svg',
+    icon: './media/icons/compiling-icon.svg',
     tag: 'RouterLink',
     attrs: { to: '/' }
   },
   {
     title: t('appAside.menuItems.users'),
-    icon: '/media/icons/users-group-icon.svg',
+    icon: './media/icons/users-group-icon.svg',
     tag: 'div',
     childrens: [
       {
@@ -159,7 +159,7 @@ const menuItems = computed(() => [
   },
   {
     title: t('appAside.menuItems.toolbox'),
-    icon: '/media/icons/box-icon.svg',
+    icon: './media/icons/box-icon.svg',
     tag: 'div',
     childrens: [
       {

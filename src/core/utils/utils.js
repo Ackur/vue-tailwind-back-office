@@ -225,7 +225,10 @@ const deepClone = (obj) => {
 }
 
 const asset = (path) => {
-  return `${import.meta.env.BASE_URL}${path}`
+  const result = `${import.meta.env.BASE_URL}${path}`
+  console.log('asset', result)
+
+  return result
 }
 
 export {

@@ -1,6 +1,7 @@
 <script setup>
 import { ref, watch } from 'vue'
-import { makeid } from '@/core/utils/utils.js'
+import { makeid, asset } from '@/core/utils/utils.js'
+
 import vClickOutside from '@/directives/clickOutside'
 import InlineSvg from 'vue-inline-svg'
 import AppButton from '@/components/ui/app-button/AppButton.vue'
@@ -101,7 +102,7 @@ defineExpose({ dropdownClose })
               >
                 <InlineSvg
                   v-if="item.icon"
-                  :src="item.icon"
+                  :src="asset(item.icon)"
                   class="text-primary"
                   :class="[item.iconClasses]"
                 />
