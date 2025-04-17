@@ -39,7 +39,7 @@
         @click="collapseClick"
       >
         <InlineSvg
-          src="/media/icons/double-arrow-icon.svg"
+          src="media/icons/double-arrow-icon.svg"
           class="rotate-90 ease-in-out duration-500 delay-200"
           :class="[
             {
@@ -83,7 +83,7 @@
           class: 'text-white rounded-lg'
         }"
       >
-        <InlineSvg src="/media/icons/code-icon.svg" class="w-7 h-7" />
+        <InlineSvg :src="asset('media/icons/code-icon.svg')" class="w-7 h-7" />
       </AppDropdown>
     </div>
   </div>
@@ -92,6 +92,8 @@
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { asset } from '@/core/utils/utils'
+
 import InlineSvg from 'vue-inline-svg'
 import AsideMenuItem from './components/AsideMenuItem.vue'
 import AppDropdown from '@/components/ui/app-dropdown/AppDropdown.vue'

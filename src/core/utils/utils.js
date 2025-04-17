@@ -224,6 +224,10 @@ const deepClone = (obj) => {
   return JSON.parse(JSON.stringify(obj))
 }
 
+const asset = (path) => {
+  return `${import.meta.env.BASE_URL}${path}`
+}
+
 export {
   getCookie,
   dateFormat,
@@ -238,5 +242,6 @@ export {
   getUniqueColorByFirstLetter,
   asyncSleep,
   sortArrayObjects,
-  deepClone
+  deepClone,
+  asset
 }
