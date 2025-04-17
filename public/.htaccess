@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Якщо файл або директорія існує – нічого не робимо
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+
+  # Усі інші запити перенаправляємо на index.html
+  RewriteRule ^ index.html [QSA,L]
+</IfModule>
