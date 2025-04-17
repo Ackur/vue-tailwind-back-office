@@ -71,18 +71,18 @@ function onClickSortedColumn(data) {
       <template #item-demo="{ item }">
         <InlineSvg
           v-if="Number(item.demo)"
-          src="./media/icons/done-circle-icon.svg"
+          src="/media/icons/done-circle-icon.svg"
           class="text-success"
         />
-        <InlineSvg v-else src="./media/icons/error-circle-icon.svg" class="text-gray-400" />
+        <InlineSvg v-else src="/media/icons/error-circle-icon.svg" class="text-gray-400" />
       </template>
       <template #item-status="{ item }">
         <InlineSvg
           v-if="item.status === 'A'"
-          src="./media/icons/done-circle-icon.svg"
+          src="/media/icons/done-circle-icon.svg"
           class="text-success"
         />
-        <InlineSvg v-else src="./media/icons/error-circle-icon.svg" class="text-gray-400" />
+        <InlineSvg v-else src="/media/icons/error-circle-icon.svg" class="text-gray-400" />
       </template>
       <template #item-actions="{ item }">
         <FieldActions :item="item" />

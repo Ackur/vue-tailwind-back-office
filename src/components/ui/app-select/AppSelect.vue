@@ -180,13 +180,13 @@ defineExpose({ errorMsg })
       </span>
       <div v-if="clearable && !isEmpty(selectedItem)" class="w-fit px-1" @click.stop="onClickClear">
         <InlineSvg
-          src="./media/icons/close-icon.svg"
+          src="/media/icons/close-icon.svg"
           class="w-5 text-gray-500 transition-all cursor-pointer hover:text-gray-600"
         />
       </div>
       <div class="w-fit p-2">
         <InlineSvg
-          src="./media/icons/arrow-right-v2-icon.svg"
+          src="/media/icons/arrow-right-v2-icon.svg"
           width="15"
           class="text-gray-400 rotate-90 transition-all"
           :class="[show && 'rotate-[270deg]']"

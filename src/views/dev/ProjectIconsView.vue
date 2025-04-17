@@ -14,7 +14,7 @@
         class="absolute top-[-16px] right-[-10px] hidden group-hover:flex"
         @click="onClickCopy(icon.path)"
       >
-        <InlineSvg src="./media/icons/dublicate-icon.svg" class="text-warning" />
+        <InlineSvg src="/media/icons/dublicate-icon.svg" class="text-warning" />
       </button>
     </div>
   </div>

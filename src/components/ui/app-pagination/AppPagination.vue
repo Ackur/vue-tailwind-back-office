@@ -30,7 +30,7 @@ function pageSizeChange(size) {
       :class="[{ 'text-gray-400': '' }]"
       @click="prevPage"
     >
-      <InlineSvg src="./media/icons/arrow-left-v2-icon.svg" />
+      <InlineSvg src="/media/icons/arrow-left-v2-icon.svg" />
     </button>
 
     <PageSizeDropdown
@@ -47,7 +47,7 @@ function pageSizeChange(size) {
       class="bg-white text-primary h-full w-9 flex items-center justify-center rounded-full rounded-l-none shadow active:shadow-none disabled:text-gray-400"
       @click="nextPage"
     >
-      <InlineSvg src="./media/icons/arrow-right-v2-icon.svg" />
+      <InlineSvg src="/media/icons/arrow-right-v2-icon.svg" />
     </button>
   </div>
 </template>

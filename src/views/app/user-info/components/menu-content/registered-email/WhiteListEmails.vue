@@ -30,7 +30,7 @@ const whiteList = computed(() => {
       <li v-for="item in whiteList" :key="item.mail_from" class="flex items-center gap-1.5">
         <!-- <div class="h-[24px] w-full max-w-[3px] bg-secondary/80 rounded-full text-xs leading-none text-transparent"></div> -->
         <InlineSvg
-          src="./media/icons/email-icon.svg"
+          src="/media/icons/email-icon.svg"
           class="w-full max-w-[20px] h-auto text-secondary/70 max-2xl:max-w-[16px] max-sm:hidden"
         />
         <span class="font-medium text-gray-500 break-all max-2xl:text-sm max-2xl:leading-tight">

@@ -5,7 +5,7 @@
     <HeaderTitle class="max-md:hidden" />
     <RouterLink to="/">
       <InlineSvg
-        src="./media/icons/pic1-icon.svg"
+        src="/media/icons/pic1-icon.svg"
         class="min-w-[38px] h-auto text-success hidden max-md:block"
       />
     </RouterLink>
@@ -18,7 +18,7 @@
         </span>
         <InlineSvg
           v-tooltip:top="$t('tooltips.credits')"
-          src="./media/icons/wallet-icon.svg"
+          src="/media/icons/wallet-icon.svg"
           class="w-6 h-auto text-primary drop-shadow-xl shadow-primary max-lg:w-5 max-lg:h-5"
         />
       </div>

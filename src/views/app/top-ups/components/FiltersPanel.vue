@@ -23,7 +23,7 @@
         icon
         class="rounded-lg overflow-visible max-sm:h-full max-sm:col-start-3 max-sm:row-start-1 max-sm:row-end-3"
       >
-        <InlineSvg src="./media/icons/search-v2-icon.svg" />
+        <InlineSvg src="/media/icons/search-v2-icon.svg" />
         <div
           class="absolute w-7 h-7 hidden border-2 border-primary-dark rounded-full pointer-events-none"
           :class="[{ '!flex animate-ping': filtersHasChanges }]"

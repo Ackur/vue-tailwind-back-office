@@ -29,7 +29,7 @@ const getExportDataString = computed(() => {
     size="sm"
     light
     icon
-    left-icon="./media/icons/download-icon.svg"
+    left-icon="/media/icons/download-icon.svg"
     class="rounded-md"
   ></AppButton>
 </template>

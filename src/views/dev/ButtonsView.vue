@@ -71,87 +71,83 @@
     <AppButton text color="light"> text </AppButton>
 
     <!--  LEFT-ICON -->
-    <AppButton left-icon="./media/icons/question-circle-icon.svg"> icon </AppButton>
-    <AppButton left-icon="./media/icons/question-circle-icon.svg" color="secondary">
+    <AppButton left-icon="/media/icons/question-circle-icon.svg"> icon </AppButton>
+    <AppButton left-icon="/media/icons/question-circle-icon.svg" color="secondary">
       icon
     </AppButton>
-    <AppButton left-icon="./media/icons/tags-icon.svg" color="success"> icon </AppButton>
-    <AppButton left-icon="./media/icons/question-circle-icon.svg" color="warning"> icon </AppButton>
-    <AppButton left-icon="./media/icons/question-circle-icon.svg" color="danger"> icon </AppButton>
-    <AppButton left-icon="./media/icons/question-circle-icon.svg" color="info"> icon </AppButton>
+    <AppButton left-icon="/media/icons/tags-icon.svg" color="success"> icon </AppButton>
+    <AppButton left-icon="/media/icons/question-circle-icon.svg" color="warning"> icon </AppButton>
+    <AppButton left-icon="/media/icons/question-circle-icon.svg" color="danger"> icon </AppButton>
+    <AppButton left-icon="/media/icons/question-circle-icon.svg" color="info"> icon </AppButton>
     <AppButton color="dark">
       <template #left-icon>
         <InlineSvg
-          src="./media/icons/question-circle-icon.svg"
+          src="/media/icons/question-circle-icon.svg"
           class="[&_path]:fill-white [&_circle]:fill-white"
         />
       </template>
       icon
     </AppButton>
-    <AppButton left-icon="./media/icons/question-circle-icon.svg" color="light"> icon </AppButton>
+    <AppButton left-icon="/media/icons/question-circle-icon.svg" color="light"> icon </AppButton>
 
     <!--  OUTLINE AND RIGHT-ICON -->
-    <AppButton outline right-icon="./media/icons/question-circle-icon.svg"> icon </AppButton>
-    <AppButton outline right-icon="./media/icons/question-circle-icon.svg" color="secondary">
+    <AppButton outline right-icon="/media/icons/question-circle-icon.svg"> icon </AppButton>
+    <AppButton outline right-icon="/media/icons/question-circle-icon.svg" color="secondary">
       icon
     </AppButton>
-    <AppButton outline right-icon="./media/icons/tags-icon.svg" color="success"> icon </AppButton>
-    <AppButton outline right-icon="./media/icons/question-circle-icon.svg" color="warning">
+    <AppButton outline right-icon="/media/icons/tags-icon.svg" color="success"> icon </AppButton>
+    <AppButton outline right-icon="/media/icons/question-circle-icon.svg" color="warning">
       icon
     </AppButton>
-    <AppButton outline right-icon="./media/icons/question-circle-icon.svg" color="danger">
+    <AppButton outline right-icon="/media/icons/question-circle-icon.svg" color="danger">
       icon
     </AppButton>
-    <AppButton outline right-icon="./media/icons/question-circle-icon.svg" color="info">
+    <AppButton outline right-icon="/media/icons/question-circle-icon.svg" color="info">
       icon
     </AppButton>
     <AppButton outline color="dark">
       <template #right-icon>
-        <InlineSvg src="./media/icons/question-circle-icon.svg" />
+        <InlineSvg src="/media/icons/question-circle-icon.svg" />
       </template>
       icon
     </AppButton>
-    <AppButton outline right-icon="./media/icons/question-circle-icon.svg" color="light">
+    <AppButton outline right-icon="/media/icons/question-circle-icon.svg" color="light">
       icon
     </AppButton>
 
     <!--  SOLO-ICON -->
-    <AppButton icon left-icon="./media/icons/question-circle-icon.svg"></AppButton>
-    <AppButton
-      icon
-      left-icon="./media/icons/question-circle-icon.svg"
-      color="secondary"
-    ></AppButton>
-    <AppButton icon left-icon="./media/icons/tags-icon.svg" color="success"></AppButton>
-    <AppButton icon left-icon="./media/icons/question-circle-icon.svg" color="warning"> </AppButton>
-    <AppButton icon left-icon="./media/icons/question-circle-icon.svg" color="danger"> </AppButton>
-    <AppButton icon left-icon="./media/icons/question-circle-icon.svg" color="info"> </AppButton>
+    <AppButton icon left-icon="/media/icons/question-circle-icon.svg"></AppButton>
+    <AppButton icon left-icon="/media/icons/question-circle-icon.svg" color="secondary"></AppButton>
+    <AppButton icon left-icon="/media/icons/tags-icon.svg" color="success"></AppButton>
+    <AppButton icon left-icon="/media/icons/question-circle-icon.svg" color="warning"> </AppButton>
+    <AppButton icon left-icon="/media/icons/question-circle-icon.svg" color="danger"> </AppButton>
+    <AppButton icon left-icon="/media/icons/question-circle-icon.svg" color="info"> </AppButton>
     <AppButton icon color="dark">
       <template #left-icon>
         <InlineSvg
-          src="./media/icons/question-circle-icon.svg"
+          src="/media/icons/question-circle-icon.svg"
           class="[&_path]:fill-white [&_circle]:fill-white"
         />
       </template>
     </AppButton>
-    <AppButton icon left-icon="./media/icons/question-circle-icon.svg" color="light"> </AppButton>
+    <AppButton icon left-icon="/media/icons/question-circle-icon.svg" color="light"> </AppButton>
 
     <!--  SOLO-ICON + LIGHT -->
-    <AppButton light icon left-icon="./media/icons/question-circle-icon.svg"></AppButton>
-    <AppButton light icon left-icon="./media/icons/question-circle-icon.svg"></AppButton>
-    <AppButton light icon left-icon="./media/icons/tags-icon.svg" color="success"></AppButton>
-    <AppButton light icon left-icon="./media/icons/question-circle-icon.svg" color="warning">
+    <AppButton light icon left-icon="/media/icons/question-circle-icon.svg"></AppButton>
+    <AppButton light icon left-icon="/media/icons/question-circle-icon.svg"></AppButton>
+    <AppButton light icon left-icon="/media/icons/tags-icon.svg" color="success"></AppButton>
+    <AppButton light icon left-icon="/media/icons/question-circle-icon.svg" color="warning">
     </AppButton>
-    <AppButton light icon left-icon="./media/icons/question-circle-icon.svg" color="danger">
+    <AppButton light icon left-icon="/media/icons/question-circle-icon.svg" color="danger">
     </AppButton>
-    <AppButton light icon left-icon="./media/icons/question-circle-icon.svg" color="info">
+    <AppButton light icon left-icon="/media/icons/question-circle-icon.svg" color="info">
     </AppButton>
     <AppButton light icon color="dark">
       <template #left-icon>
-        <InlineSvg src="./media/icons/question-circle-icon.svg" />
+        <InlineSvg src="/media/icons/question-circle-icon.svg" />
       </template>
     </AppButton>
-    <AppButton light icon left-icon="./media/icons/question-circle-icon.svg" color="light">
+    <AppButton light icon left-icon="/media/icons/question-circle-icon.svg" color="light">
     </AppButton>
 
     <!--  ACTIVE HOVER BG TEXT COLOR -->

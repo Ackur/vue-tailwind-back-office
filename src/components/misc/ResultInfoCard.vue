@@ -19,8 +19,8 @@ const props = defineProps({
   }
 })
 const types = {
-  success: { icon: './media/icons/check-v2-icon.svg', iconClasses: 'border-success text-success' },
-  danger: { icon: './media/icons/close-icon.svg', iconClasses: 'border-danger text-danger' }
+  success: { icon: '/media/icons/check-v2-icon.svg', iconClasses: 'border-success text-success' },
+  danger: { icon: '/media/icons/close-icon.svg', iconClasses: 'border-danger text-danger' }
 }
 </script>
 

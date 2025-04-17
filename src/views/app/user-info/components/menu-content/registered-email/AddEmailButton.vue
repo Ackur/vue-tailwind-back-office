@@ -80,7 +80,7 @@ function changeVisible(val) {
   >
     <InlineSvg
       v-tooltip:top="$t('userRegisteredEmail.whiteList.add.tooltip')"
-      src="./media/icons/plus-circle-icon.svg"
+      src="/media/icons/plus-circle-icon.svg"
     />
     <template #content>
       <p class="font-normal text-gray-400 leading-tight">

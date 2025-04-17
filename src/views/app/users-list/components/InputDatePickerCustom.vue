@@ -97,7 +97,7 @@ defineExpose({ presetRanges })
       >
         <template #append>
           <div class="text-primary">
-            <InlineSvg src="./media/icons/calendar-icon.svg" />
+            <InlineSvg src="/media/icons/calendar-icon.svg" />
           </div>
         </template>
       </AppInput>

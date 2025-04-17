@@ -69,7 +69,7 @@ function changeVisible(val) {
     @submit="submit"
     @changeVisible="changeVisible"
   >
-    <InlineSvg v-tooltip:top="'Change email'" src="./media/icons/edit-v2-icon.svg" />
+    <InlineSvg v-tooltip:top="'Change email'" src="/media/icons/edit-v2-icon.svg" />
     <template #content>
       <p class="font-normal text-gray-400 leading-tight">
         {{ t('generalSettingsPage.fromEmail.changeForm.title') }}

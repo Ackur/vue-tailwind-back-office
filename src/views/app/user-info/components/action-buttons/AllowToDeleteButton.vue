@@ -69,7 +69,7 @@ async function submit(close) {
   >
     <InlineSvg
       v-tooltip:top="$t(currentPermissionData.tooltip)"
-      src="./media/icons/eraser-icon.svg"
+      src="/media/icons/eraser-icon.svg"
       :class="currentPermissionData.iconClasses"
     />
   </AppButtonQuestion>

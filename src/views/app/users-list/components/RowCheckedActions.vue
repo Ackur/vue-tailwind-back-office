@@ -20,7 +20,7 @@ const currentAction = ref({})
 const actions = ref([
   {
     title: 'user',
-    icon: './media/icons/accept-user-icon.svg',
+    icon: '/media/icons/accept-user-icon.svg',
     color: 'secondary',
     tooltip: 'usersTable.checkedAction.userOn.tooltip',
     question: 'usersTable.checkedAction.userOn.question',
@@ -30,7 +30,7 @@ const actions = ref([
   },
   {
     title: 'user',
-    icon: './media/icons/disable-user-icon.svg',
+    icon: '/media/icons/disable-user-icon.svg',
     color: 'secondary',
     tooltip: 'usersTable.checkedAction.userOff.tooltip',
     question: 'usersTable.checkedAction.userOff.question',
@@ -40,7 +40,7 @@ const actions = ref([
   },
   {
     title: 'demo',
-    icon: './media/icons/demo-on-v2-icon.svg',
+    icon: '/media/icons/demo-on-v2-icon.svg',
     color: 'secondary',
     tooltip: 'usersTable.checkedAction.demoOn.tooltip',
     question: 'usersTable.checkedAction.demoOn.question',
@@ -50,7 +50,7 @@ const actions = ref([
   },
   {
     title: 'demo',
-    icon: './media/icons/demo-off-v2-icon.svg',
+    icon: '/media/icons/demo-off-v2-icon.svg',
     color: 'secondary',
     tooltip: 'usersTable.checkedAction.demoOff.tooltip',
     question: 'usersTable.checkedAction.demoOff.question',

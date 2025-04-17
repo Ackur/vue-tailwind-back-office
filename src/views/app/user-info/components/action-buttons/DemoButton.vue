@@ -69,7 +69,7 @@ async function submit(close) {
   >
     <InlineSvg
       v-tooltip:top="$t(currentDemoData.tooltip)"
-      src="./media/icons/demo-icon.svg"
+      src="/media/icons/demo-icon.svg"
       :class="currentDemoData.iconClasses"
     />
   </AppButtonQuestion>
