@@ -8,7 +8,7 @@
       @click="onClickParent"
     >
       <InlineSvg
-        :src="props.item.icon"
+        :src="asset(props.item.icon)"
         class="min-w-[24px] max-w-[24px] text-slate-400 group-hover:text-slate-50"
         :class="[
           {
@@ -30,7 +30,7 @@
         :class="[(!props.parentCollapsed || props.parentHovered) && 'opacity-100']"
       >
         <InlineSvg
-          src="/media/icons/arrow-right-v2-icon.svg"
+          :src="asset('media/icons/arrow-right-v2-icon.svg')"
           width="15"
           class="text-gray-400 rotate-90 transition-all"
           :class="[showChildrens && 'rotate-[270deg]']"
@@ -71,6 +71,8 @@
 <script setup>
 import { ref, computed, watch } from 'vue'
 import { useRoute } from 'vue-router'
+import { asset } from '@/core/utils/utils'
+
 import InlineSvg from 'vue-inline-svg'
 
 const props = defineProps({

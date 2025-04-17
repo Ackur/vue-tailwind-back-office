@@ -14,7 +14,7 @@
     >
       <RouterLink to="/" class="flex items-center gap-2 overflow-hidden">
         <InlineSvg
-          src="/media/icons/pic1-icon.svg"
+          :src="asset('media/icons/pic1-icon.svg')"
           class="w-10 h-10 ease-in-out duration-300 text-success"
           :class="[collapsed && !hovered && '!w-8 !h-8']"
         />
@@ -39,7 +39,7 @@
         @click="collapseClick"
       >
         <InlineSvg
-          src="media/icons/double-arrow-icon.svg"
+          :src="asset('media/icons/double-arrow-icon.svg')"
           class="rotate-90 ease-in-out duration-500 delay-200"
           :class="[
             {
@@ -68,7 +68,6 @@
     </div>
 
     <div
-      v-if="isDevMode"
       ref="bottomRef"
       class="flex items-center justify-center border-t border-gray-700 border-dashed p-1"
     >
@@ -113,8 +112,6 @@ const topRef = ref()
 const bottomRef = ref()
 const mainMaxHeight = ref(0)
 
-const isDevMode = computed(() => import.meta.env.DEV)
-
 const devMenuItems = [
   {
     title: 'Dev Fonts',
@@ -141,13 +138,13 @@ const devMenuItems = [
 const menuItems = computed(() => [
   {
     title: t('appAside.menuItems.dashboard'),
-    icon: './media/icons/compiling-icon.svg',
+    icon: 'media/icons/compiling-icon.svg',
     tag: 'RouterLink',
     attrs: { to: '/' }
   },
   {
     title: t('appAside.menuItems.users'),
-    icon: './media/icons/users-group-icon.svg',
+    icon: 'media/icons/users-group-icon.svg',
     tag: 'div',
     childrens: [
       {
@@ -159,7 +156,7 @@ const menuItems = computed(() => [
   },
   {
     title: t('appAside.menuItems.toolbox'),
-    icon: './media/icons/box-icon.svg',
+    icon: 'media/icons/box-icon.svg',
     tag: 'div',
     childrens: [
       {
