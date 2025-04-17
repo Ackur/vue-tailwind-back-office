@@ -2911,7 +2911,7 @@ export const newUserTemplate = {
   actions: [],
   numbers: ['111222333'],
   emails: [],
-  ...defaultMailCert,
+  ...structuredClone(defaultMailCert),
   login_2fa: '1',
   status: 'A',
   city: '',
@@ -3003,7 +3003,7 @@ export const providers = {
         address: 'Carrer Domenges, 1 (1a 3o)',
         numbers: ['+34555666777'],
         state: '',
-        ...defaultMailCert
+        ...structuredClone(defaultMailCert)
       },
       {
         actions: [
@@ -3103,7 +3103,7 @@ export const providers = {
         address: '',
         numbers: ['111222333'],
         state: '',
-        ...defaultMailCert
+        ...structuredClone(defaultMailCert)
       },
       {
         name: 'test555',
@@ -3145,7 +3145,7 @@ export const providers = {
         address: '',
         numbers: ['111222333'],
         state: '',
-        ...defaultMailCert
+        ...structuredClone(defaultMailCert)
       },
       {
         name: 'test222._-',
@@ -3172,7 +3172,7 @@ export const providers = {
         address: '',
         numbers: ['111222333'],
         state: '',
-        ...defaultMailCert
+        ...structuredClone(defaultMailCert)
       },
       {
         name: 'test111._-',
@@ -3199,7 +3199,7 @@ export const providers = {
         address: '',
         numbers: ['111222333'],
         state: '',
-        ...defaultMailCert
+        ...structuredClone(defaultMailCert)
       },
       {
         name: 'Username._-',
@@ -3226,7 +3226,7 @@ export const providers = {
         address: '',
         numbers: ['111222333'],
         state: '',
-        ...defaultMailCert
+        ...structuredClone(defaultMailCert)
       },
       {
         name: 'Username-12',
@@ -3253,7 +3253,7 @@ export const providers = {
         address: '',
         numbers: ['111222333'],
         state: '',
-        ...defaultMailCert
+        ...structuredClone(defaultMailCert)
       },
       {
         name: 'Username-11',
@@ -3280,7 +3280,7 @@ export const providers = {
         address: '',
         numbers: ['111222333'],
         state: '',
-        ...defaultMailCert
+        ...structuredClone(defaultMailCert)
       },
       {
         name: 'Username-10',
@@ -3307,7 +3307,7 @@ export const providers = {
         address: '',
         numbers: ['111222333'],
         state: '',
-        ...defaultMailCert
+        ...structuredClone(defaultMailCert)
       },
       {
         name: 'Username-9',
@@ -3334,7 +3334,7 @@ export const providers = {
         address: '',
         numbers: ['111222333'],
         state: '',
-        ...defaultMailCert
+        ...structuredClone(defaultMailCert)
       },
       {
         name: 'Username-8',
@@ -3361,7 +3361,7 @@ export const providers = {
         address: '',
         numbers: ['111222333'],
         state: '',
-        ...defaultMailCert
+        ...structuredClone(defaultMailCert)
       },
       {
         name: 'Username-7',
@@ -3388,7 +3388,7 @@ export const providers = {
         address: 'Avtozavodska',
         numbers: ['111222333'],
         state: '',
-        ...defaultMailCert
+        ...structuredClone(defaultMailCert)
       },
       {
         name: 'Username-6',
@@ -3415,7 +3415,7 @@ export const providers = {
         address: 'sd sf sdf',
         numbers: ['111222333'],
         state: '',
-        ...defaultMailCert
+        ...structuredClone(defaultMailCert)
       },
       {
         name: 'Username-5',
@@ -3442,7 +3442,7 @@ export const providers = {
         address: '',
         numbers: ['111222333'],
         state: '',
-        ...defaultMailCert
+        ...structuredClone(defaultMailCert)
       },
       {
         name: 'Username-4',
@@ -3469,7 +3469,7 @@ export const providers = {
         address: '',
         numbers: ['111222333'],
         state: '',
-        ...defaultMailCert
+        ...structuredClone(defaultMailCert)
       },
       {
         name: 'Username-3',
@@ -3496,7 +3496,7 @@ export const providers = {
         address: '',
         numbers: ['111222333'],
         state: '',
-        ...defaultMailCert
+        ...structuredClone(defaultMailCert)
       },
       {
         name: 'Username-2',
@@ -3523,7 +3523,7 @@ export const providers = {
         address: '',
         numbers: ['111222333'],
         state: '',
-        ...defaultMailCert
+        ...structuredClone(defaultMailCert)
       },
       {
         name: 'Username-1',
@@ -3550,7 +3550,7 @@ export const providers = {
         address: '',
         numbers: ['111222333'],
         state: '',
-        ...defaultMailCert
+        ...structuredClone(defaultMailCert)
       },
       {
         name: 'Ackur2',
@@ -3577,7 +3577,7 @@ export const providers = {
         address: '',
         numbers: ['111222333'],
         state: '',
-        ...defaultMailCert
+        ...structuredClone(defaultMailCert)
       },
       {
         name: 'Ackur1',
@@ -3612,7 +3612,7 @@ export const providers = {
         address: "Passeig d'Urgell 21",
         numbers: ['111222333'],
         state: 'Demo',
-        ...defaultMailCert
+        ...structuredClone(defaultMailCert)
       }
     ]
   }

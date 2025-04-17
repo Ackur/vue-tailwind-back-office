@@ -176,10 +176,10 @@ export const useUsersService = defineStore('usersService', () => {
   }
 
   function setSelectedUser(user) {
-    if (user) {
-      selectedUser.value = { ...selectedUser.value, ...user }
+    if (selectedUser.value) {
+      selectedUser.value = deepClone({ ...selectedUser.value, ...user })
     } else {
-      selectedUser.value = user
+      selectedUser.value = deepClone(user)
     }
   }
 
